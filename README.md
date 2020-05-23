@@ -7,9 +7,13 @@ Code page
  - vimscript
  - html
  - g
+
+[//]: #
 Circuits/Computer Page?
  - clock
  - ...
+[//]: #
 Solutions page
  - FreeNAS
  - ???
+[//]: #
