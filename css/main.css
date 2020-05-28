@@ -1,12 +1,12 @@
-/* Stylesheet revised: 5/28/2020 3:41 PM */
+/* Stylesheet revised: 5/28/2020 3:55 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
 }
-/* debug 
+/* debug */
 div { outline: 1px dashed yellow } 
 span { outline: 1px dashed red }
-*/
+
 html {
     background-color: #1c1b1a;
     font-family: Hack;
