@@ -1,16 +1,31 @@
+/* Stylesheet revised: 5/28/2020 1:44 AM */
+
+
+html {
+    background-color: #1c1b1a;
+}
+
+#body {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
 #page-container {
-  position: relative;
-  min-height: 100vh;
+    position: relative;
+    min-height: 95vh;
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+    padding-bottom: 2.5rem;    /* Footer height */
+    background-image: url("/resources/wallpaper.jpg");
 }
 
 #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
 }
 
