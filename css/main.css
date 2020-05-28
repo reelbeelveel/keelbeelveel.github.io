@@ -10,6 +10,11 @@ span { outline: 1px dashed red }
 html {
     background-color: #1c1b1a;
     font-family: Hack;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
 }
 
 #body {
