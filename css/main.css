@@ -41,6 +41,9 @@ html {
 }
 
 #content-wrap {
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
     padding-bottom: 2.5rem;    /* Footer height */
 }
 
