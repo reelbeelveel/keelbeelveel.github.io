@@ -18,16 +18,11 @@ body {
 }
 
 #body {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 0px;
-    padding-bottom: 0px;
     background: url('../resources/wallpaper.jpg');
-    background-size: cover;
+    background-size: 105%;
+    margin-left -2.5%;
     background-repeat: no-repeat;
-}
 
-#body > * {
 }
 
 #header {
@@ -58,7 +53,6 @@ body {
     padding-left: 4px;
     padding-right: 4px;
     padding-bottom: 2.5rem;
-    /* Footer height */
 }
 
 #page-body td, table, th {
@@ -81,7 +75,6 @@ body {
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-    /* Footer height */
 }
 
 #footer a {
