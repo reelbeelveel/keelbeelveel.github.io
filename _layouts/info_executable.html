@@ -3,8 +3,7 @@
 <html>
     <head>
         <title>{{ page.title }}</title>
-        <!-- Link to main stylesheet-->
-        <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/infoex.css"/>
         <meta charset="UTF-8"/>
         <meta name="description" content="{{ page.description }}"/>
         <meta name="keywords" content="Kyle Belveal, keelbeelveel, computer science, computer engineering, computer, CS, CE, EECS, engineering, projects, project, {{ page.keywords }}"/>
@@ -12,61 +11,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="revised" content="{{ page.revised }}"/>
         <!-- Layout type = info_executable   -->
-        <!-- Layout revised 5/27/2020 6:04pm -->
+        <!-- Layout revised 5/28/2020 12:29pm -->
     </head>
-    <body style="color: #00ff00; background-color: #1c1b1a">
-        <div id="page-container">
-            <header style = "background-color: #242321">
-                <h1 style="color: #87ff00">Kyle Belveal's project site</h1>
-                <nav>
-                    <h3 style="color: #d7005f">
-                        <a style="color:#d7005f" href = "/index.html">Home</a>
-                        <a style="color:#d7005f" href = "/projects/projects.html">Projects</a>
-                        <a style="color:#d7005f" href = "/hardware.html">Hardware</a>
-                        <a style="color:#d7005f" href = "/midware.html" >Midware</a>
-                        <a style="color:#d7005f" href = "/software/software.html">Software</a>
-                        <a style="color:#d7005f" href = "https://delaware.gov/" target = "_blank">Delaware</a>
-                    </h3>
-                </nav>
-                <hr style="border: 2px solid #d7d7ff"/>
-            </header>
-            <div class="content-wrap">
-                <main>
-                    <section>
-                        <div id=page-content>
-                            <section id="page-header">
-                                <h3>
-                                    <img src="{{ page.icon }}" width=64 alt="Icon"/>
-                                    {{ page.sw-title }}
+    <div id="body">
+        <body>
+            <div id="page-container">
+                <div id="header" class="header">
+                    <header class="header">
+                        <h1>Kyle Belveal's project site</h1>
+                        <div id="nav" class="nav">
+                            <nav class="nav">
+                                <h3 class ="nav">
+                                    <a class="nav" href = "/index.html">Home</a>
+                                    <a class="nav" href = "/projects/projects.html">Projects</a>
+                                    <a class="nav" href = "/hardware.html">Hardware</a>
+                                    <a class="nav" href = "/midware.html" >Midware</a>
+                                    <a class="nav" href = "/software/software.html">Software</a>
+                                    <a class="nav" href = "https://delaware.gov/" target = "_blank">Delaware</a>
                                 </h3>
-                                <h4>
-                                    {{ page.sw-desc }}
-                                </h4>
+                            </nav>
+                        </div>
+                        <hr>
+                    </header>
+                </div>
+                <div class="content-wrap">
+                    <main>
+                        <div id=page-content>
+                            <div id="page-header" class="page-header">
+                                <h3 class="page-header">
+                                    <img src="{{ page.icon }}" width=64 alt="Icon"/>
+                                    <div id="page-title" class="page-header">
+                                        {{ page.sw-title }}
+                                    </div>
+                                </h3>
+                                <div id="page-desc" class="page-header">
+                                    <h4 class="page-header">
+                                        {{ page.sw-desc }}
+                                    </h4>
+                                </div>
                                 <hr class="page-header" style="border: 2px solid #d7d7ff"/>
-                            </section>
-                            <section id="page-body">
+                            </div>
+                            <div id="page-body">
                                 <table class="software-links">
                                     {{ page.links }}
                                 </table>
                                 <p>
                                     Click "Run" to see this script in action!
                                 </p>
-                            </section>
+                            </div>
                             <div id="page-import">
                                 {{ content }}
                             </div>
                         </div>
                         <!-- END OF PAGE CONTENT -->
-                    </section>
-                </main>
+                    </main>
+                </div>
             </div>
-        </div>
-        <footer id="footer">
-            <span> Powered By
-                <a style="color:#d7005f" href="https://github.com/keelbeelveel/keelbeelveel.github.io">
-                    GitHub
-                </a>
-            </span>
-        </footer>
-    </body>
+            <div id="footer" class="footer">
+                <footer>
+                    <span> Powered By
+                        <a style="color:#d7005f" href="https://github.com/keelbeelveel/keelbeelveel.github.io">
+                            GitHub
+                        </a>
+                    </span>
+                </footer>
+            </div>
+        </body>
+    </div>
 </html>
