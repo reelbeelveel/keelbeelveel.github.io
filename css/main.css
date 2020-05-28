@@ -3,13 +3,30 @@
 
 html {
     background-color: #1c1b1a;
+    font-family: Hack;
+    src: url('../resources/fonts/Hack-Regular.ttf');
 }
 
 #body {
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 5px;
-    padding-bottom: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: url('../resources/wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#body * {
+    background: rgba(28,27,26,.5);
+}
+
+#page-header {
+    padding-left: 20px;
+
+}
+
+.page-header {
+    color: #87ff00;
 }
 
 #page-container {
@@ -19,8 +36,8 @@ html {
 
 #content-wrap {
     padding-bottom: 2.5rem;    /* Footer height */
-    background-image: url("/resources/wallpaper.jpg");
 }
+
 
 #footer {
     position: absolute;
