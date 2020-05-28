@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="revised" content="{{ page.revised }}"/>
         <!-- Layout type = info_executable   -->
-        <!-- Layout revised 5/29/2020  3:40pm -->
+        <!-- Layout revised 5/28/2020  5:32pm -->
     </head>
         <body>
     <div id="body">
@@ -62,14 +62,17 @@
                             </table>
                         </div>
                         <div id="flex" class="flex">
+                            <div id="" class="code {{ page.code-type }}">
+                                {{ content }}
+                            </div>
                         </div>
                         <div id="fixed-right" class="fixed-right">
                             <div id="replFrame" class="replFrame">
                                 <p>
                                     Click "Run" to see this script in action!
                                 </p>
-                            <div id="page-import" class="replFrame">
-                                {{ content }}
+                            <div id="replFrame" class="replFrame">
+                                {{ page.frame }}
                             </div>
                             </div>
                         </div>
