@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="revised" content="{{ page.revised }}"/>
         <!-- Layout type = info_executable   -->
-        <!-- Layout revised 5/28/2020 12:29pm -->
+        <!-- Layout revised 5/29/2020  3:34am -->
     </head>
     <div id="body">
         <body>
@@ -39,7 +39,14 @@
                         <div id=page-content>
                             <div id="page-header" class="page-header">
                                 <h3 class="page-header">
-                                    <img src="{{ page.icon }}" width=64 alt="Icon"/>
+                                    <a href="{{ page.icon-href }}">
+                                        <span class="icontooltip">
+                                            <img src="{{ page.icon}}" width=64 alt="Icon" class="icontooltip">
+                                            <span class="icontooltiptext">
+                                                {{ page.type }}
+                                            </span>
+                                        </span>
+                                    </a>
                                     <span id="page-title" class="page-header">
                                         {{ page.sw-title }}
                                     </span>
