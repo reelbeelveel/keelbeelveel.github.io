@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -11,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="revised" content="{{ page.revised }}"/>
         <!-- Layout type = info_executable   -->
-        <!-- Layout revised 5/29/2020  3:34am -->
+        <!-- Layout revised 5/29/2020  1:23pm -->
     </head>
     <div id="body">
         <body>
@@ -31,33 +30,35 @@
                                 </h3>
                             </nav>
                         </div>
-                        <hr>
                     </header>
                 </div>
-                <div id="content-wrap" class="content-wrap">
-                    <main>
-                        <div id=page-content>
+                <main>
+                    <div id="content-wrap" class="content-wrap contains-flex">
+                        <div id="fixed-left">
                             <div id="page-header" class="page-header">
                                 <h3 class="page-header">
-                                        <span class="icontooltip">
-                                    <a href="{{ page.icon-href }}">
-                                            <img src="{{ page.icon}}" width=64 alt="Icon" class="icontooltip">
-                                    </a>
-                                            <span class="icontooltiptext">
-                                                {{ page.type }}
-                                            </span>
+                                    <div class="center">
+                                    <div class="icontooltip">
+                                        <a href="{{ page.icon-href }}">
+                                            <img src="{{ page.icon}}" alt="Icon" class="icon">
+                                        </a>
+                                        <span class="icontooltiptext">
+                                            {{ page.type }}
                                         </span>
-                                    <span id="page-title" class="page-header">
+                                    </div>
+                                    </div>
+                                    <div id="page-title" class="page-header title">
                                         {{ page.sw-title }}
-                                    </span>
+                                    </div>
                                 </h3>
-                                <div id="page-desc" class="page-header">
+                                <span id="page-desc" class="page-header">
                                     <h4 class="page-header">
                                         {{ page.sw-desc }}
                                     </h4>
-                                </div>
-                                <hr class="page-header" style="border: 2px solid #d7d7ff"/>
+                                </span>
                             </div>
+                        </div>
+                        <div id="flex-right" class="flex">
                             <div id="page-body">
                                 <table class="software-links">
                                     {{ page.links }}
@@ -70,9 +71,9 @@
                                 {{ content }}
                             </div>
                         </div>
-                        <!-- END OF PAGE CONTENT -->
-                    </main>
-                </div>
+                    </div>
+                    <!-- END OF PAGE CONTENT -->
+                </main>
             </div>
             <div id="footer" class="footer">
                 <footer>

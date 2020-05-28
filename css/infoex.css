@@ -1,8 +1,17 @@
 /* Revised 5/28/2020 5:17 AM */
 @import "main.css";
+
+#fixed-left {
+    width: 30%;
+    margin-left: 5%
+}
+#fixed-left < {
+}
+.flex {
+}
+
 .icontooltip {
   position: relative;
-  display: inline-block;
 }
 
 .icontooltip .icontooltiptext {
@@ -27,6 +36,11 @@
     text-decoration: none;
 }
 
-.icontooltim img {
+.icontooltip img {
     border: 0 none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
+
