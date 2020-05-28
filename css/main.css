@@ -1,4 +1,4 @@
-/* Stylesheet revised: 5/28/2020 1:44 AM */
+/* Stylesheet revised: 5/28/2020 4:44 AM */
 
 
 html {
@@ -47,11 +47,29 @@ html {
     padding-bottom: 2.5rem;    /* Footer height */
 }
 
+#page-body td, table, th{
+    background: rgba(135,255,0,0.2);
+    border-collapse: collapse;
+    color: #d75f00;
+    border: 2px solid #d7d7ff;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+}
 
 #footer {
+    color: #d7d7ff; 
+    padding-top: 44px;
+    padding-left:4px;
+    background: rgba(95, 135, 95, 0.4);
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;            /* Footer height */
+}
+
+#footer a {
+    color: #d7005f
 }
 
