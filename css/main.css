@@ -1,7 +1,9 @@
-/* Stylesheet revised: 5/28/2020 3:55 PM */
+/* Stylesheet revised: 5/28/2020 5:13 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
+    font-family: Hurmit-NF;
+    src url('../resources/fonts/Hurmit-NF.otf')
 }
 /* debug */
 div { outline: 1px dashed yellow } 
