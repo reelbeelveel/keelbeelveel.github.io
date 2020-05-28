@@ -3,7 +3,6 @@
 .icontooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
 }
 
 .icontooltip .icontooltiptext {
@@ -22,4 +21,12 @@
 
 .icontooltip:hover .icontooltiptext {
   visibility: visible;
+}
+
+.icontooltip a {
+    text-decoration: none;
+}
+
+.icontooltim img {
+    border: 0 none;
 }
