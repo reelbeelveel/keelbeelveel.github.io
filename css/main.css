@@ -16,7 +16,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
 }
-#body * {
+#body > * {
     background: rgba(28,27,26,.5);
 }
 #header {
