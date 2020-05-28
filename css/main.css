@@ -19,6 +19,12 @@ html {
 #body * {
     background: rgba(28,27,26,.5);
 }
+#header {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    color: #d7ff00;
+}
 
 #page-header {
     padding-left: 20px;
