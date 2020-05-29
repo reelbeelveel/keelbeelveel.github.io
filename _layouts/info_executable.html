@@ -10,11 +10,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="revised" content="{{ page.revised }}"/>
         <!-- Layout type = info_executable   -->
-        <!-- Layout revised 5/28/2020  5:32pm -->
+        <!-- Layout revised 5/28/2020  8:07pm -->
     </head>
         <body>
-    <div id="body">
-            <div id="page-container">
+    <div id="body" class="contains-flex">
+            <div id="page-container"i class="flex">
                 <div id="header" class="header">
                     <header class="header">
                         <h1>Kyle Belveal's project site</h1>
@@ -34,7 +34,7 @@
                 </div>
                 <main>
                     <div id="content-wrap" class="content-wrap contains-flex">
-                        <div id="fixed-left">
+                        <div id="flex-left" class="flex left">
                             <div id="page-header" class="page-header">
                                 <h3 class="page-header">
                                     <div class="center">
@@ -61,17 +61,17 @@
                                 {{ page.links }}
                             </table>
                         </div>
-                        <div id="flex" class="flex">
+                        <div id="flex-center" class="flex center">
                             <div id="" class="code {{ page.code-type }}">
                                 {{ content }}
                             </div>
                         </div>
-                        <div id="fixed-right" class="fixed-right">
-                            <div id="replFrame" class="replFrame">
+                        <div id="flex-right" class="flex right">
+                            <div id="replFrame" class="replFrame flex">
                                 <p>
                                     Click "Run" to see this script in action!
                                 </p>
-                            <div id="replFrame" class="replFrame">
+                            <div class="replFrame flex">
                                 {{ page.frame }}
                             </div>
                             </div>
