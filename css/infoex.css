@@ -1,13 +1,34 @@
-/* Revised 5/28/2020 2:51 PM */
+/* Revised 5/28/2020 8:27 PM */
 @import "main.css";
+@import "miamineon.css";
 
-#fixed-left {
-    width: 30%;
+.left {
     margin-left: 5%
 }
-#fixed-left < {
+#flex-center {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    margin: auto;
+    max-width: 58%;
+    background: #666462;
 }
-.flex {
+#fixed < {
+    max-width:100%;
+}
+.highlight {
+    padding: 2px;
+}
+.highlight * {
+    margin: 0;
+}
+.right {
+    position: absolute;
+    right: 0;
+    margin-right:5%;
+}
+#flex-left, #flex-right {
+    max-width: 15%;
 }
 
 .icontooltip {
@@ -42,5 +63,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+}
+replFrame, replFrame * {
+    max-width:100%;
+}
+figure {
+    margin: 0;
 }
 

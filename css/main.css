@@ -1,4 +1,4 @@
-/* Stylesheet revised: 5/28/2020 5:13 PM */
+/* Stylesheet revised: 5/28/2020 8:12 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -15,16 +15,20 @@ html {
     overflow-x: hidden;
 }
 
+html, #page-container {
+    overflow-y: auto;
+}
+
 body {
     margin: 0;
+    flex: auto;
 }
 
 #body {
     background: url('../resources/wallpaper.jpg');
-    background-size: 105%;
-    margin-left -2.5%;
+    background-size: cover;
     background-repeat: no-repeat;
-
+    background-attachment: fixed;
 }
 
 #header {
@@ -83,14 +87,15 @@ body {
     color: #d7005f;
 }
 
-.flex {
-    flex-grow=1; }
+.flex, .flex * {
+    flex: 1;
+    max-width:100%;
+}
 
 .center {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    width: 99%;
 }
 
 .contains-flex {
