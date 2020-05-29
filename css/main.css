@@ -1,4 +1,4 @@
-/* Stylesheet revised: 5/28/2020 8:12 PM */
+/* Stylesheet revised: 5/28/2020 9:56 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -24,11 +24,19 @@ body {
     flex: auto;
 }
 
+p, span, .text{
+
+font-size: .9vw;
+
+}
+
+
 #body {
     background: url('../resources/wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center center;
 }
 
 #header {
