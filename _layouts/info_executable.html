@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="revised" content="{{ page.revised }}"/>
         <!-- Layout type = info_executable   -->
-        <!-- Layout revised 5/28/2020  8:07pm -->
+        <!-- Layout revised 5/28/2020 10:00pm -->
     </head>
         <body>
     <div id="body" class="contains-flex">
@@ -42,7 +42,7 @@
                                             <a href="{{ page.icon-href }}">
                                                 <img src="{{ page.icon}}" alt="Icon" class="icon">
                                             </a>
-                                            <span class="icontooltiptext">
+                                            <span class="icontooltiptext text">
                                                 {{ page.type }}
                                             </span>
                                         </div>
@@ -57,13 +57,16 @@
                                     </h4>
                                 </span>
                             </div>
-                            <table class="software-links">
+                            <table class="software-links text">
                                 {{ page.links }}
                             </table>
                         </div>
                         <div id="flex-center" class="flex center">
                             <div id="" class="code {{ page.code-type }}">
                                 {{ content }}
+                                <div class="code label text">
+                                    {{ page.type }}
+                                </div>
                             </div>
                         </div>
                         <div id="flex-right" class="flex right">
