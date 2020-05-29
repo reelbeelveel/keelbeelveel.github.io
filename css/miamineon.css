@@ -1,0 +1,71 @@
+.highlight pre { background-color: #1c1b1a }
+.highlight .lineno { color: #857f78  }
+.highlight .hll { background-color: #1c1b1a }
+.highlight .c { color: #5f875f } /* Comment */
+.highlight .err { color: #cccccc; border: 1px solid #FF0000 } /* Error */
+.highlight .g { color: #00ff00 } /* Generic */
+.highlight .k { color: #d7ff00 } /* Keyword */
+.highlight .l { color: #87ff00 } /* Literal */
+.highlight .n { color: #d75f00 } /* Name */
+.highlight .o { color: #d7ff00 } /* Operator */
+.highlight .x { color: #d7ff00 } /* Other */
+.highlight .p { color: #d7ff00 } /* Punctuation */
+.highlight .cm { color: #d7d7ff } /* Comment.Multiline */
+.highlight .cp { color: #87ffa7 } /* Comment.Preproc */
+.highlight .c1 { color: #d7d7ff } /* Comment.Single */
+.highlight .cs { color: #d7d7ff; font-weight: bold } /* Comment.Special */
+.highlight .gd { color: #cd0000 } /* Generic.Deleted */
+.highlight .ge { color: #cccccc; font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #87ffa7; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00cd00 } /* Generic.Inserted */
+.highlight .go { color: #808080 } /* Generic.Output */
+.highlight .gp { color: #d7d7ff; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { color: #d7d7ff; font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #af00d7; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight .kc { color: #d7ff00 } /* Keyword.Constant */
+.highlight .kd { color: #d7ff00 } /* Keyword.Declaration */
+.highlight .kn { color: #af00d7 } /* Keyword.Namespace */
+.highlight .kp { color: #d7ff00 } /* Keyword.Pseudo */
+.highlight .kr { color: #d7ff00 } /* Keyword.Reserved */
+.highlight .kt { color: #d7d7ff } /* Keyword.Type */
+.highlight .ld { color: #af00ff } /* Literal.Date */
+.highlight .m { color: #af00ff } /* Literal.Number */
+.highlight .s { color: #d7005f } /* Literal.String */
+.highlight .na { color: #d7d7ff } /* Name.Attribute */
+.highlight .nb { color: #af00ff } /* Name.Builtin */
+.highlight .nc { color: #87ffa7 } /* Name.Class */
+.highlight .no { color: #d75f00 } /* Name.Constant */
+.highlight .nd { color: #d75f00 } /* Name.Decorator */
+.highlight .ni { color: #d75f00 } /* Name.Entity */
+.highlight .ne { color: #666699; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #d75f00 } /* Name.Function */
+.highlight .nl { color: #d75f00 } /* Name.Label */
+.highlight .nn { color: #d75f00 } /* Name.Namespace */
+.highlight .nx { color: #d75f00 } /* Name.Other */
+.highlight .py { color: #d75f00 } /* Name.Property */
+.highlight .nt { color: #d75f00 } /* Name.Tag */
+.highlight .nv { color: #87ffa7 } /* Name.Variable */
+.highlight .ow { color: #d7ff00 } /* Operator.Word */
+.highlight .w { color: #d7d7ff } /* Text.Whitespace */
+.highlight .mf { color: #af00ff } /* Literal.Number.Float */
+.highlight .mh { color: #af00ff } /* Literal.Number.Hex */
+.highlight .mi { color: #af00ff } /* Literal.Number.Integer */
+.highlight .mo { color: #af00ff } /* Literal.Number.Oct */
+.highlight .sb { color: #d7005f } /* Literal.String.Backtick */
+.highlight .sc { color: #d7005f } /* Literal.String.Char */
+.highlight .sd { color: #d7005f } /* Literal.String.Doc */
+.highlight .s2 { color: #d7005f } /* Literal.String.Double */
+.highlight .se { color: #d7005f } /* Literal.String.Escape */
+.highlight .sh { color: #d7005f } /* Literal.String.Heredoc */
+.highlight .si { color: #d7005f } /* Literal.String.Interpol */
+.highlight .sx { color: #d7005f } /* Literal.String.Other */
+.highlight .sr { color: #d7005f } /* Literal.String.Regex */
+.highlight .s1 { color: #d7005f } /* Literal.String.Single */
+.highlight .ss { color: #d7005f } /* Literal.String.Symbol */
+.highlight .bp { color: #af00d7 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #87ffa7 } /* Name.Variable.Class */
+.highlight .vg { color: #87ffa7 } /* Name.Variable.Global */
+.highlight .vi { color: #87ffa7 } /* Name.Variable.Instance */
+.highlight .il { color: #af00ff } /* Literal.Number.Integer.Long */
