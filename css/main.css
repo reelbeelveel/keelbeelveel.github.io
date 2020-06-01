@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/1/2020 6:06 PM */
+/* Stylesheet revised: 6/1/2020 6:27 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -139,6 +139,38 @@ div.nav a:hover{
     flex: 1;
 }
 
+.icontooltip {
+  position: relative;
+}
+.icontooltip .icontooltiptext {
+  visibility: hidden;
+  width: 90%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  top: -5%;
+  left: 5%;
+  /* Position the.icontooltip */
+  position: absolute;
+  z-index: 1;
+}
+.icontooltip:hover .icontooltiptext {
+  visibility: visible;
+}
+
+.icontooltip a {
+    text-decoration: none;
+}
+
+.icontooltip img {
+    border: 0 none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
 .center {
     display: block;
     margin-left: auto;

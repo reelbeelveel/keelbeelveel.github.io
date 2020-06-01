@@ -1,4 +1,4 @@
-/* Revised 6/1/2020 5:46 PM */
+/* Revised 6/1/2020 6:27 PM */
 @import "main.css";
 @import "miamineon.css";
 
@@ -36,39 +36,19 @@ img.icon {
     right: 2.5vw;
     background-color: rgba(95, 135, 95, 0.4);
 }
-
-.icontooltip {
-  position: relative;
-}
-
 .icontooltip .icontooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 70%;
   background-color: black;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-
+  top: 40%;
+  left: 15%;
   /* Position the.icontooltip */
   position: absolute;
   z-index: 1;
-}
-
-.icontooltip:hover .icontooltiptext {
-  visibility: visible;
-}
-
-.icontooltip a {
-    text-decoration: none;
-}
-
-.icontooltip img {
-    border: 0 none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
 }
 #replFrame {
     max-width:100%;
