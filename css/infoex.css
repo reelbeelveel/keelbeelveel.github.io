@@ -1,4 +1,4 @@
-/* Revised 6/1/2020 6:27 PM */
+/* Revised 6/1/2020 6:29 PM */
 @import "main.css";
 @import "miamineon.css";
 
@@ -39,16 +39,8 @@ img.icon {
 .icontooltip .icontooltiptext {
   visibility: hidden;
   width: 70%;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
   top: 40%;
   left: 15%;
-  /* Position the.icontooltip */
-  position: absolute;
-  z-index: 1;
 }
 #replFrame {
     max-width:100%;

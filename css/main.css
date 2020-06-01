@@ -145,14 +145,13 @@ div.nav a:hover{
 .icontooltip .icontooltiptext {
   visibility: hidden;
   width: 90%;
-  background-color: black;
-  color: #fff;
+  background-color: #1c1b1a;
+  color: #0f0;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
   top: -5%;
   left: 5%;
-  /* Position the.icontooltip */
   position: absolute;
   z-index: 1;
 }
