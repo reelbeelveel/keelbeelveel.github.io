@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/1/2020 5:21 PM */
+/* Stylesheet revised: 6/1/2020 6:06 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -55,6 +55,17 @@ div.nav a:hover{
     background: #87ff00;
     color: #1c1b1a;
 }
+
+
+#main-sitetitle { visibility: visible; }
+#alt-sitetitle { 
+    position: absolute;
+    visibility: hidden; 
+    top: 0;
+}
+
+#site-title:hover #main-sitetitle { visibility: hidden; }
+#site-title:hover #alt-sitetitle { visibility: visible; }
 
 #body {
     background: url('../resources/wallpaper.jpg');
