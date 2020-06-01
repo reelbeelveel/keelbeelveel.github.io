@@ -1,4 +1,4 @@
-/* Revised 6/1/2020 3:43 PM */
+/* Revised 6/1/2020 5:46 PM */
 @import "main.css";
 @import "miamineon.css";
 
@@ -70,17 +70,27 @@ img.icon {
     margin-right: auto;
     width: 90%;
 }
-#replFrame, #replFrame * {
+#replFrame {
     max-width:100%;
     margin-bottom: 1%;
     padding-top: 4px;
-    background: #666462;
 }
+.replFrame.replLabel {
+    position: relative;
+    color: #1c1b1a;
+    background: #87ff00;
+    border: 2px solid #d7005f;
+    visibility: hidden;
+    width: fit-content;
+    padding: 2px 2px 2px 2px;
+    left: -32.5%;
+}
+.replFrame:hover .replLabel {
+    visibility: visible;
+}
+
 #replFrame iframe {
     width: 100%;
-}
-#replLabel {
-    color: #87ff00;
 }
 figure {
     margin: 0;
