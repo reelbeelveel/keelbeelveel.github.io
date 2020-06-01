@@ -57,26 +57,34 @@
                                     </h4>
                                 </span>
                             </div>
-                            <table class="software-links text">
+                            <div id="software-links" class="software-links text center contains-flex">
                                 {{ page.links }}
-                            </table>
-                        </div>
-                        <div id="flex-center" class="flex center">
-                            <div id="" class="code {{ page.code-type }}">
-                                {{ content }}
-                                <div class="code label text">
-                                    {{ page.type }}
-                                </div>
                             </div>
                         </div>
-                        <div id="flex-right" class="flex right">
+                        <div id="flex-center" class="flex center">
                             <div id="replFrame" class="replFrame flex">
-                                <p>
-                                    Click "Run" to see this script in action!
+                                <p id="replLabel" class="center">
+                                    Click <big>▶</big> to see this script in action!
                                 </p>
                             <div class="replFrame flex">
                                 {{ page.frame }}
                             </div>
+                            </div>
+                            <div id="" class="code {{ page.code-type }}">
+                                <div id="code-label-type" class="code label text">
+                                    {{ page.type }}
+                                </div>
+                                <div id="code-label-title" class="code label text">
+                                    {{ page.code-title }}
+                                </div>
+                                {{ content }}
+                            </div>
+                        </div>
+                        <div id="flex-right" class="flex right center">
+                            <div id="code-info" class="center">
+                                <p>Title: {{ page.sw-title }} </p>
+                                <p>Author: {{ page.sw-author }}</p>
+                                <p>Revised: {{ page.sw-revised }}</p>
                             </div>
                         </div>
                     </div>
