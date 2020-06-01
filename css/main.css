@@ -1,4 +1,4 @@
-/* Stylesheet revised: 5/28/2020 9:56 PM */
+/* Stylesheet revised: 6/1/2020 3:42 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -8,17 +8,15 @@
 /* debug */
 div { outline: 1px dashed yellow } 
 span { outline: 1px dashed red }
-
+*/
 html {
     background-color: #1c1b1a;
     font-family: Hack;
     overflow-x: hidden;
 }
 
-html, #page-container {
-    overflow-y: auto;
-}
-
+html { overflow-y: hidden; }
+#body { overflow-y: auto; }
 body {
     margin: 0;
     flex: auto;
@@ -27,7 +25,12 @@ body {
 p, span, .text{
 
 font-size: .9vw;
+color: #87ff00;
 
+}
+
+h3 {
+    font-size: 1.6vw;
 }
 
 
@@ -37,6 +40,7 @@ font-size: .9vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
+    padding-bottom: 5vh;
 }
 
 #header {
@@ -49,7 +53,8 @@ font-size: .9vw;
 #page-header {
     padding-left: 10px;
     padding-right: 10px;
-    padding-top; 10px; padding-bottom: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     background: rgba(28,27,26,.8);
 }
 
@@ -66,7 +71,6 @@ font-size: .9vw;
     padding-top: 1px;
     padding-left: 4px;
     padding-right: 4px;
-    padding-bottom: 2.5rem;
 }
 
 #page-body td, table, th {
@@ -82,22 +86,20 @@ font-size: .9vw;
 
 #footer {
     color: #d7d7ff;
-    padding-top: 44px;
+    padding 2.5rem;-top: 44px;
     padding-left: 4px;
     background: rgba(95, 135, 95, 0.4);
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
 }
 
 #footer a {
     color: #d7005f;
 }
 
-.flex, .flex * {
+.flex {
     flex: 1;
-    max-width:100%;
 }
 
 .center {
@@ -105,9 +107,14 @@ font-size: .9vw;
     margin-left: auto;
     width: 99%;
 }
+.center p {
+    text-align: center;
+}
 
 .contains-flex {
     display: flex;
+    height: auto;
+    width: auto;
 }
 
 .title {
