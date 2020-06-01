@@ -28,11 +28,12 @@ font-size: .9vw;
 color: #87ff00;
 
 }
+h1 * { font-size: 2.6vw;  }
+h2 { font-size: 1.8vw;  }
+h3 { font-size: 1.6vw; }
 
-h3 {
-    font-size: 1.6vw;
+div.nav {
 }
-
 
 #body {
     background: url('../resources/wallpaper.jpg');
