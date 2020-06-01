@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/1/2020 3:42 PM */
+/* Stylesheet revised: 6/1/2020 5:21 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -32,7 +32,28 @@ h1 * { font-size: 2.6vw;  }
 h2 { font-size: 1.8vw;  }
 h3 { font-size: 1.6vw; }
 
-div.nav {
+div.nav{
+    width: 100%;
+    overflow: auto;
+    background: rgba(28,27,26, 0.9);
+    border: 2px solid lime;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+div.nav a {
+    color: #87ff00;
+    float: left;
+    text-align: center;
+    width: 12.5%;
+    font-size: 1.95vw;
+    width: 16.66667%;
+    text-decoration: none;
+}
+
+div.nav a:hover{
+    background: #87ff00;
+    color: #1c1b1a;
 }
 
 #body {
@@ -72,6 +93,7 @@ div.nav {
     padding-top: 1px;
     padding-left: 4px;
     padding-right: 4px;
+    margin-top: 4vh;
 }
 
 #page-body td, table, th {
