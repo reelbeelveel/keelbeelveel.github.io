@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/1/2020 6:30 PM */
+/* Stylesheet revised: 6/1/2020 9:21 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -28,6 +28,7 @@ font-size: .9vw;
 color: #87ff00;
 
 }
+a { color: #d75f00; }
 h1 * { font-size: 2.6vw;  }
 h2 { font-size: 1.8vw;  }
 h3 { font-size: 1.6vw; }
