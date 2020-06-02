@@ -13,10 +13,13 @@
     max-width:100%;
 }
 .highlight {
-    padding: 2px;
+    overflow-x: auto;
+    display: flex;
+    border: 2px solid #666462;
 }
 .highlight * {
     margin: 0;
+    flex: 1;
 }
 #flex-left {
     position: absolute;
@@ -64,11 +67,11 @@ figure {
 }
 #file-label-type
 {
-    right: -86.5%;
+    right: -89.5%;
 }
 #file-label-title
 {
-    left: -12.5%;
+    left: -9.5%;
 }
 
 #file-links {
