@@ -1,5 +1,7 @@
 .highlight pre { background-color: #1c1b1a }
-.highlight .lineno { color: #857f78  }
+.highlight *  { color: #d7d7ff; font-size: .9vw; }
+.highlight pre code * { height: 1.5vw; padding-top: 4px; padding-bottom: 4px; display: inline-block; }
+.highlight .lineno { color: #857f78; }
 .highlight .hll { background-color: #1c1b1a }
 .highlight .c { color: #5f875f } /* Comment */
 .highlight .err { color: #cccccc; border: 1px solid #FF0000 } /* Error */
