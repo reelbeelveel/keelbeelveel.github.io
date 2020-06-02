@@ -1,4 +1,4 @@
-/* Revised 6/1/2020 10:05 PM */
+/* Revised 6/1/2020 10:10 PM */
 @import "main.css";
 @import "miamineon.css";
 
@@ -66,7 +66,10 @@ figure {
     color: #d75f00;
 }
 .filebody {
+    padding-top: 8px;
+    padding bottom: 9px;
     background: #1c1b1a;
+    border: 2px solid #666462;
 }
 #file-label-type
 {
