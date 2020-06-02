@@ -1,4 +1,4 @@
-/* Revised 6/1/2020 8:46 PM */
+/* Revised 6/1/2020 10:05 PM */
 @import "main.css";
 @import "miamineon.css";
 
@@ -64,6 +64,9 @@ figure {
 }
 .file a {
     color: #d75f00;
+}
+.filebody {
+    background: #1c1b1a;
 }
 #file-label-type
 {
