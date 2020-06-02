@@ -1,5 +1,0 @@
-gems: [jekyll_github_sample]
-markdown: kramdown
-kramdown:
-  syntax_highlighter: pygments
-highlighter: pygments
