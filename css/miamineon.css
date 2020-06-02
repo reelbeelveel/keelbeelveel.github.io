@@ -4,7 +4,7 @@
 .highlight .lineno { color: #857f78; }
 .highlight .hll { background-color: #1c1b1a }
 .highlight .c { color: #5f875f } /* Comment */
-.highlight .err { color: #cccccc; border: 1px solid #FF0000 } /* Error */
+.highlight .err { color: #cccccc} /* Error */
 .highlight .g { color: #00ff00 } /* Generic */
 .highlight .k { color: #d7ff00 } /* Keyword */
 .highlight .l { color: #87ff00 } /* Literal */
