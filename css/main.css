@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/7/2020 8:58 PM */
+/* Stylesheet revised: 6/8/2020 4:43 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -48,7 +48,7 @@ div.nav a {
     text-align: center;
     width: 12.5%;
     font-size: 1.95vw;
-    width: 16.66667%;
+    width: 20%;
     text-decoration: none;
 }
 
