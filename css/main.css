@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/1/2020 9:21 PM */
+/* Stylesheet revised: 6/8/2020 4:43 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -48,7 +48,7 @@ div.nav a {
     text-align: center;
     width: 12.5%;
     font-size: 1.95vw;
-    width: 16.66667%;
+    width: 20%;
     text-decoration: none;
 }
 
@@ -64,7 +64,7 @@ div.nav a:hover{
     visibility: hidden; 
     top: 0;
 }
-
+#site-title { width: fit-content; }
 #site-title:hover #main-sitetitle { visibility: hidden; }
 #site-title:hover #alt-sitetitle { visibility: visible; }
 
