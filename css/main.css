@@ -55,9 +55,8 @@ div.nav a {
     color: #87ff00;
     float: left;
     text-align: center;
-    width: 12.5%;
+    width: 16.666%;
     font-size: 1.95vw;
-    width: 20%;
     text-decoration: none;
 }
 
@@ -73,7 +72,10 @@ div.nav a:hover{
 #alt-sitetitle { 
     position: absolute;
     visibility: hidden; 
-    top: 0;
+    top: 2px;
+}
+#alt-sitetitle a {
+    text-decoration: none;
 }
 #hoverbox { width: fit-content; }
 #hoverbox:hover #main-sitetitle { visibility: hidden; }
