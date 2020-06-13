@@ -11,34 +11,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="revised" content="{{ page.revised }}"/>
         <!-- Layout type = info_project   -->
-        <!-- Layout revised 6/8/2020 04:40pm -->
+        <!-- Layout revised 6/13/2020 02:44pm -->
     </head>
     <body>
         <div id="body" class="contains-flex">
             <div id="page-container" class="flex">
-                <div id="header" class="header">
-                    <header class="header">
-                        <div id="site-title" class="sitetitle">
-                            <div id="main-sitetitle" class="sitetitle"><h1>
-                                <span style="color: #d7005f">k</span><span style="color: #d7d7ff">eel</span><span style="color: #d75f00">b</span><span style="color: #d7d7ff">eel</span><span style="color: #d7ff00">v</span><span style="color: #d7d7ff">eel</span><span style="color: #87ff00">.com</span>
-                                </h1></div>
-                                <div id="alt-sitetitle" class="sitetitle"><h1>
-                                <span style="color: #d7005f">k</span><span style="color: #d7d7ff">yle</span><span style="color: #d75f00">b</span><span style="color: #d7d7ff">el</span><span style="color: #d7ff00">v</span><span style="color: #d7d7ff">eal</span>
-                                    </h1></div>
-
-                        </div>
-                        <p class="pagesubtitle">EECS projects pulled directly from my skull-meat</p>
-                        <nav class="nav">
-                            <div id="nav" class="nav">
-                                <a class="nav" href = "/index.html">Home</a>
-                                <a class="nav" href = "/hardware.html">Hardware</a>
-                                <a class="nav" href = "/midware.html" >Midware</a>
-                                <a class="nav" href = "/software/software.html">Software</a>
-                                <a class="nav" href = "/projects/projects.html">Projects</a>
-                            </div>
-                        </nav>
-                    </header>
-                </div>
+                {% include header.html %} 
                 <main>
                     <div id="content-wrap" class="content-wrap contains-flex">
                         <div id="flex-left" class="flex left">
@@ -69,7 +47,7 @@
                             </div>
                         </div>
                         <div id="flex-center" class="flex center">
-                                {{ content }}
+                            {{ content }}
                         </div>
                         <div id="flex-right" class="flex right center">
                             <div id="proj-info" class="center">
@@ -82,15 +60,7 @@
                     <!-- END OF PAGE CONTENT -->
                 </main>
             </div>
-            <div id="footer" class="footer">
-                <footer>
-                    <span> Powered By
-                        <a style="color:#d7005f" href="https://github.com/keelbeelveel/keelbeelveel.github.io">
-                            GitHub
-                        </a>
-                    </span>
-                </footer>
-            </div>
         </div>
+        {% include footer.html %}
     </body>
 </html>
