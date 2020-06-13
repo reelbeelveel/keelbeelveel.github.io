@@ -1,18 +1,11 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>{{ page.title }}</title>
-        <!-- Link to main stylesheet-->
-        <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+        {% include head.html %}
         <link rel="icon" href="/resources/icons/favicon{{ page.favicon }}.png" type="image/png"/>
-        <meta charset="UTF-8"/>
-        <meta name="description" content="{{ page.description }}"/>
         <meta name="keywords" content="Kyle Belveal, keelbeelveel, computer science, computer engineering, computer, CS, CE, EECS, electrical engineering, engineering, projects, project, python, c++, html, css, verilog, {{ page.keywords }}"/>
-        <meta name="author" content="Kyle Belveal"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="revised" content="{{ page.revised }}"/>
         <!-- Layout type - default           -->
-        <!-- Layout revised 6/13/2020 2:28pm -->
+        <!-- Layout revised 6/13/2020 5:46pm -->
     </head>
     <div id="body">
         <body>
@@ -26,6 +19,6 @@
                     </main>
                 </div>
             </div>
-                {% include footer.html %}
+            {% include footer.html %}
         </body>
 </html>
