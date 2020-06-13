@@ -17,6 +17,7 @@ html {
 
 html { overflow-y: hidden; }
 #body { overflow-y: auto; }
+#header { background-color: rgba(28,27,26,0.9); }
 body {
     margin: 0;
     flex: auto;
@@ -24,7 +25,7 @@ body {
 
 p, span, .text{
 
-font-size: .9vw;
+font-size: vw;
 color: #87ff00;
 
 }
@@ -32,6 +33,14 @@ a { color: #d75f00; }
 h1 * { font-size: 2.6vw;  }
 h2 { font-size: 1.8vw;  }
 h3 { font-size: 1.6vw; }
+
+.left {
+    font-align: left;
+}
+
+.right {
+    font-align: right;
+}
 
 div.nav{
     width: 100%;
