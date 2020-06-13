@@ -1,14 +1,14 @@
-/* Stylesheet revised: 6/8/2020 4:43 PM */
+/* Stylesheet revised: 6/13/2020 12:54 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
     font-family: Hurmit-NF;
     src url('../resources/fonts/Hurmit-NF.otf')
 }
-/* debug
+/* debug */
 div { outline: 1px dashed yellow } 
 span { outline: 1px dashed red }
-*/
+
 html {
     background-color: #1c1b1a;
     font-family: Hack;
@@ -67,15 +67,17 @@ div.nav a:hover{
 }
 
 
-#main-sitetitle { visibility: visible; }
+#main-sitetitle { 
+    visibility: visible; 
+}
 #alt-sitetitle { 
     position: absolute;
     visibility: hidden; 
     top: 0;
 }
-#site-title { width: fit-content; }
-#site-title:hover #main-sitetitle { visibility: hidden; }
-#site-title:hover #alt-sitetitle { visibility: visible; }
+#hoverbox { width: fit-content; }
+#hoverbox:hover #main-sitetitle { visibility: hidden; }
+#hoverbox:hover #alt-sitetitle { visibility: visible; }
 
 #body {
     background: url('../resources/wallpaper.jpg');
