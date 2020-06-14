@@ -79,7 +79,13 @@ div.nav a:hover{
 #feed a {
     width: fit-content;
 }
-#feed div.blurb{ background: rgba(28, 27, 26,0.8); }
+#feed div.blurb{ 
+    position: relative;
+    align: center;
+    width: 95%;
+    padding: 2.5%;
+    background: rgba(28, 27, 26,0.8);
+}
 
 #footer {
     color: #d7d7ff;
@@ -115,6 +121,10 @@ div.nav a:hover{
 #page-container {
     position: relative;
     min-height: 95vh;
+    width: 85%;
+    position: center;
+    margin-left: 7.5%;
+    margin-right: auto;
 }
 #page-body td, table, th {
     background: rgba(95,135,95,0.3);
