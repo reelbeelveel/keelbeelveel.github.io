@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/17/2020 10:25 PM */
+/* Stylesheet revised: 6/18/2020  6:13 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -39,28 +39,26 @@ h1 * {}
 h2 {}
 h3 {}
 div.nav{
-    width: 100%;
-    overflow: auto;
-    border: 2px solid lime;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    margin-top: 1ex;
 }
 div.nav a {
-    color: #87ff00;
-    float: left;
-    text-align: center;
-    width: 16.666%;
-    text-decoration: none;
-}
-div.nav a:hover{
+    color: #00f;
     background: #87ff00;
-    color: #1c1b1a;
+    width: fit-content;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+div.nav a.first { margin-left: 0; }
+div.nav a:hover{
+    background: #0f0;
+    color: #000;
 }
 #alt-sitetitle { 
     position: absolute;
     visibility: hidden;
     z-index: 10;
-    top: 0.83vh;
+    top: 0;
     left: 0;
 }
 #alt-sitetitle a {
