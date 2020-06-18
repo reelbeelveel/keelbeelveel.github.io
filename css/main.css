@@ -28,7 +28,7 @@ img.cursor {
     position: relative;
     top: .83vh;
     width: .8em;
-    height: 3vh;
+    height: 2ex;
     opacity: .8;
 }
 p, span, .text{
