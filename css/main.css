@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/18/2020  6:13 PM */
+/* Stylesheet revised: 6/19/2020  6:48 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -7,68 +7,72 @@
 }
 
 /* debug */
-div { outline: 1px dashed yellow } 
+div { outline: 1px dashed yellow }
 span { outline: 1px dashed red }
 
 html {
-    background-color: #000;
+    background-color: #696e77;
     font-family: Hack;
     overflow-x: hidden;
 }
 
 html { overflow-y: hidden; }
 #body { overflow-y: visible; }
-.sitetitle h1 span { font-size: 3vw; }
 body {
-    background-color:#000;
     margin: 0;
     flex: auto;
 }
-img.cursor {
-    position: relative;
-    top: .83vh;
-    width: .8em;
-    height: 2ex;
-    opacity: .8;
+header ul.bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4d5057;
 }
-p, span, .text{
-    color: #87ff00;
+header ul.bar li {
+    display: inline-block;
 }
-a { color: #d75f00; }
-h1 * {}
-h2 {}
-h3 {}
-div.nav{
-    margin-top: 1ex;
+header ul.bar li a {
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+    display: block;
+    text-decoration: none;
+    font-family: Arial;
 }
-div.nav a {
-    color: #00f;
-    background: #87ff00;
+li.nav-home {
+    float: left;
+    color: #4d5057;
+    background-color: #87ff00;
+}
+li.nav-link {
+    float: left;
+    background-color: #4d5057;
+    width: auto;
+}
+li.nav-link:hover{
+    background-color: #e2e2e2;
+}
+li.nav-icon {
+    float: right;
+    color: #4d5057;
+    background-color: #f62dae;
+}
+span#nav a {
+    font-family: Arial;
+    color: #e2e2e2;
+    background: #4d5057;
     width: fit-content;
     text-decoration: none;
     margin-left: 1em;
     margin-right: 1em;
 }
-div.nav a.first { margin-left: 0; }
-div.nav a:hover{
-    background: #0f0;
-    color: #000;
-}
-#alt-sitetitle { 
-    position: absolute;
-    visibility: hidden;
-    z-index: 10;
-    top: 0;
-    left: 0;
-}
-#alt-sitetitle a {
-    text-decoration: none;
+span#nav a:hover{
+    color: #bbbac6;
 }
 #body {
     padding-bottom: 5vh;
 }
 #content-wrap {
-    background-color:#00f;
     padding-top: 1px;
     padding-left: 4px;
     padding-right: 4px;
@@ -103,7 +107,7 @@ div.nav a:hover{
 #hoverbox:hover #main-sitetitle { visibility: hidden; }
 #hoverbox:hover #alt-sitetitle { visibility: visible; }
 #header {
-    color: #d7ff00;
+    background: #4d5057;
 }
 #main-sitetitle { 
     position: relative;
