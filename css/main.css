@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/19/2020  6:48 PM */
+/* Stylesheet revised: 6/22/2020 10:08 AM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -10,6 +10,7 @@
 div { outline: 1px dashed yellow }
 span { outline: 1px dashed red }
 
+* { box-sizing: border-box; }
 html {
     background-color: #696e77;
     font-family: Hack;
@@ -35,6 +36,8 @@ header ul.bar li {
 header ul.bar li a {
     padding-top: 1ex;
     padding-bottom: 1ex;
+    padding-left: 1ex;
+    padding-right: 1ex;
     display: block;
     text-decoration: none;
     font-family: Arial;
