@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/22/2020  1:15 PM */
+/* Stylesheet revised: 6/22/2020  1:54 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -6,18 +6,24 @@
     src url('../resources/fonts/Hurmit-NF.otf')
 }
 
-/* debug */
+/* debug 
 div { outline: 1px dashed yellow }
 span { outline: 1px dashed red }
-
+*/
 * { box-sizing: border-box; }
 :root {
-    --color-bg-dark: #4d5057;
-    --color-bg-light: #696E77;
+    --color-bg-dark: #26282b;
+    --color-bg-light: #4d5056;
     --color-accent-a: #87ff00;
     --color-accent-b: #F62DAE;
     --color-plaintext: #e2e2e2;
     --color-spicytext: #bbbac6;
+
+    /*
+    --fs-nav: ;
+    --lh-hav; ;
+     
+    */
 }
 
 html {
@@ -37,20 +43,21 @@ header ul.bar{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-size: var(--fs-nav, 1rem);
+    line-height: var(--lh-nav, default);
     background-color: var(--color-bg-dark);
 }
 header ul.bar li {
     display: inline-block;
+    height: 100%;
 }
 header ul.bar li.nav-link a {
-    padding-top: 1ex;
-    padding-bottom: 1ex;
-    padding-left: 1ex;
-    padding-right: 1ex;
+    padding: 1rem 1rem 1rem 1rem;
     display: block;
     text-decoration: none;
     font-family: Arial;
     color: var(--color-accent-b);
+    height: 100%;
 }
 header ul.bar li.nav-home {
     float: left;
@@ -59,8 +66,8 @@ header ul.bar li.nav-home {
 }
 
 header ul.bar li.nav-home a img {
-    width: 2em;
-    height: auto;
+    width: auto;
+    height: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
 }
 
 li.nav-link {
