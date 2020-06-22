@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/22/2020  5:24 PM */
+/* Stylesheet revised: 6/22/2020  5:31 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -12,9 +12,15 @@ span { outline: 1px dashed red }
 
 * { box-sizing: border-box; }
 :root {
+    /* 
+     * note to self:
+     * alt shades are 6 steps
+     * lighter than the prim.
+     */
     --clr-bg-dark: #26282b;
     --clr-bg-lite: #4d5056;
     --clr-accent-a: #87ff00;
+    --clr-accent-a-alt: #4C8F00;
     --clr-accent-b: #F62DAE;
     --clr-accent-b-alt: #B00775;
     --clr-plaintext: #e2e2e2;
@@ -64,23 +70,22 @@ header ul.bar li a {
     height: 100%;
 }
 header ul.bar li a span {
-    padding-top: 1rem;
     display: block;
     height: var(--nav-hgt);
-    padding: 0 1rem 0 1rem;
+    padding: 1rem 1rem 0 1rem;
     background-color: var(--clr-bg-dark);
 }
 header ul.bar li.nav-link a {
     text-decoration: none;
     font-family: Arial;
-    color: var(--clr-accent-b);
+    color: var(--clr-accent-a);
     background-color: var(--clr-accent-a);
 }
 header ul.bar li.nav-link:hover a {
-    background-color: var(--clr-accent-b);
+    background-color: var(--clr-accent-a-alt);
 }
 header ul.bar li.nav-home:hover a {
-    background-color: var(--clr-accent-b);
+    background-color: var(--clr-accent-a-alt);
 }
 
 header ul.bar li.nav-home {
