@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/22/2020  5:31 PM */
+/* Stylesheet revised: 6/22/2020  6:01 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -75,14 +75,9 @@ header ul.bar li a span {
     padding: 1rem 1rem 0 1rem;
     background-color: var(--clr-bg-dark);
 }
-header ul.bar li.nav-link a {
-    text-decoration: none;
-    font-family: Arial;
-    color: var(--clr-accent-a);
-    background-color: var(--clr-accent-a);
-}
-header ul.bar li.nav-link:hover a {
-    background-color: var(--clr-accent-a-alt);
+header ul.bar li img, header ul.bar li * img{
+    width: auto;
+    height: var(--nav-hgt);
 }
 header ul.bar li.nav-home:hover a {
     background-color: var(--clr-accent-a-alt);
@@ -94,25 +89,38 @@ header ul.bar li.nav-home {
     background-color: var(--clr-accent-a);
 }
 
-header ul.bar li a img {
-    width: auto;
-    height: var(--nav-hgt);
-}
-header ul.bar li.nav-icon a:hover {
-    background-color: var(--clr-bg-lite);
-}
-
-li.nav-link {
+header ul.bar li.nav-link {
     float: left;
     background-color: var(--clr-bg-dark);
     width: auto;
 }
 
-li.nav-icon {
+header ul.bar li.nav-link a {
+    text-decoration: none;
+    font-family: Arial;
+    color: var(--clr-accent-a);
+    background-color: var(--clr-accent-a);
+}
+
+header ul.bar li.nav-link:hover a {
+    background-color: var(--clr-accent-a-alt);
+}
+
+header ul.bar li.nav-banner img {
+
+}
+
+header ul.bar li.nav-icon {
     float: right;
     color: var(--clr-bg-dark);
     background-color: var(--clr-accent-b);
 }
+
+header ul.bar li.nav-icon a:hover {
+    background-color: var(--clr-bg-lite);
+}
+
+
 #body {
     padding-bottom: 5vh;
 }

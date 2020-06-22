@@ -5,11 +5,12 @@
         <link rel="icon" href="/resources/icons/favicon{{ page.favicon }}.png" type="image/png"/>
         <meta name="keywords" content="Kyle Belveal, keelbeelveel, computer science, computer engineering, computer, CS, CE, EECS, electrical engineering, engineering, projects, project, python, c++, html, css, verilog, {{ page.keywords }}"/>
         <!-- Layout type - default           -->
-        <!-- Layout revised 6/13/2020 5:46pm -->
+        <!-- Layout revised 6/22/2020 6:00pm -->
     </head>
     <div id="body">
         <body>
-            {% include header.html %}
+            {% capture page_banner %}{{ page.banner }}{% endcapture %}
+            {% include header.html banner=page_banner %}
             <div id="page-container">
                 <div id="content-wrap" class="content-wrap">
                     <main>
