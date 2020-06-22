@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/22/2020  1:54 PM */
+/* Stylesheet revised: 6/22/2020  3:34 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -12,12 +12,13 @@ span { outline: 1px dashed red }
 */
 * { box-sizing: border-box; }
 :root {
-    --color-bg-dark: #26282b;
-    --color-bg-light: #4d5056;
-    --color-accent-a: #87ff00;
-    --color-accent-b: #F62DAE;
-    --color-plaintext: #e2e2e2;
-    --color-spicytext: #bbbac6;
+    --clr-bg-dark: #26282b;
+    --clr-bg-lite: #4d5056;
+    --clr-accent-a: #87ff00;
+    --clr-accent-b: #F62DAE;
+    --clr-accent-b-alt: #B00775;
+    --clr-plaintext: #e2e2e2;
+    --clr-spicytext: #bbbac6;
 
     /*
     --fs-nav: ;
@@ -27,7 +28,7 @@ span { outline: 1px dashed red }
 }
 
 html {
-    background-color: var(--color-bg-light);
+    background-color: var(--clr-bg-lite);
     font-family: Hack;
     overflow-x: hidden;
 }
@@ -45,7 +46,7 @@ header ul.bar{
     overflow: hidden;
     font-size: var(--fs-nav, 1rem);
     line-height: var(--lh-nav, default);
-    background-color: var(--color-bg-dark);
+    background-color: var(--clr-bg-dark);
 }
 header ul.bar li {
     display: inline-block;
@@ -56,32 +57,35 @@ header ul.bar li.nav-link a {
     display: block;
     text-decoration: none;
     font-family: Arial;
-    color: var(--color-accent-b);
+    color: var(--clr-accent-b);
     height: 100%;
 }
 header ul.bar li.nav-home {
     float: left;
-    color: var(--color-bg-dark);
-    background-color: var(--color-accent-a);
+    color: var(--clr-bg-dark);
+    background-color: var(--clr-accent-a);
 }
 
-header ul.bar li.nav-home a img {
+header ul.bar li a img {
     width: auto;
     height: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
+}
+header ul.bar li.nav-icon a:hover {
+    background-color: var(--clr-bg-lite);
 }
 
 li.nav-link {
     float: left;
-    background-color: var(--color-bg-dark);
+    background-color: var(--clr-bg-dark);
     width: auto;
 }
 li.nav-link:hover{
-    background-color: var(--color-plaintext);
+    background-color: var(--clr-plaintext);
 }
 li.nav-icon {
     float: right;
-    color: var(--color-bg-dark);
-    background-color: var(--color-accent-b);
+    color: var(--clr-bg-dark);
+    background-color: var(--clr-accent-b);
 }
 #body {
     padding-bottom: 5vh;
@@ -107,7 +111,7 @@ li.nav-icon {
 }
 
 #footer {
-    color: var(--color-bg-light);
+    color: var(--clr-bg-lite);
     padding-top:  2.5rem-44px;
     padding-left: 4px;
     position: absolute;
@@ -115,13 +119,13 @@ li.nav-icon {
     width: 100%;
 }
 #footer a {
-    color: var(--color-accent-b);
+    color: var(--clr-accent-b);
 }
 #hoverbox { width: fit-content; }
 #hoverbox:hover #main-sitetitle { visibility: hidden; }
 #hoverbox:hover #alt-sitetitle { visibility: visible; }
 #header {
-    background: var(--color-bg-dark);
+    background: var(--clr-bg-dark);
 }
 #main-sitetitle {
     position: relative;
@@ -144,15 +148,15 @@ li.nav-icon {
 }
 #page-body td, table, th {
     border-collapse: collapse;
-    color: var(--color-accent-b);
-    border: 2px solid var(--color-plaintext);
+    color: var(--clr-accent-b);
+    border: 2px solid var(--clr-plaintext);
     padding-left: 2px;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-right: 2px;
 }
 #page-body td a {
-    color: var(--color-accent-a);
+    color: var(--clr-accent-a);
 }
 .center {
     display: block;
@@ -183,7 +187,7 @@ li.nav-icon {
 .icontooltip .icontooltiptext {
     visibility: hidden;
     width: 90%;
-    color: var(--color-accent-a);
+    color: var(--clr-accent-a);
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
@@ -196,7 +200,7 @@ li.nav-icon {
     visibility: visible;
     display: inline-block;
     overflow-x: visible;
-    background-color: var(--color-bg-dark);
+    background-color: var(--clr-bg-dark);
 }
 .icontooltip a {
     text-decoration: none;
@@ -212,7 +216,7 @@ li.nav-icon {
     font-align: left;
 }
 .page-header {
-    color: var(--color-accent-a);
+    color: var(--clr-accent-a);
 }
 .right {
     font-align: right;
