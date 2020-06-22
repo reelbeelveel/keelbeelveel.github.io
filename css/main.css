@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/22/2020  3:34 PM */
+/* Stylesheet revised: 6/22/2020  5:24 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -77,6 +77,9 @@ header ul.bar li.nav-link a {
     background-color: var(--clr-accent-a);
 }
 header ul.bar li.nav-link:hover a {
+    background-color: var(--clr-accent-b);
+}
+header ul.bar li.nav-home:hover a {
     background-color: var(--clr-accent-b);
 }
 
