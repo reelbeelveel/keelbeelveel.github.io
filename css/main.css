@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/22/2020 10:25 AM */
+/* Stylesheet revised: 6/22/2020  1:15 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -42,7 +42,7 @@ header ul.bar{
 header ul.bar li {
     display: inline-block;
 }
-header ul.bar li a {
+header ul.bar li.nav-link a {
     padding-top: 1ex;
     padding-bottom: 1ex;
     padding-left: 1ex;
@@ -50,12 +50,19 @@ header ul.bar li a {
     display: block;
     text-decoration: none;
     font-family: Arial;
+    color: var(--color-accent-b);
 }
-li.nav-home {
+header ul.bar li.nav-home {
     float: left;
     color: var(--color-bg-dark);
     background-color: var(--color-accent-a);
 }
+
+header ul.bar li.nav-home a img {
+    width: 2em;
+    height: auto;
+}
+
 li.nav-link {
     float: left;
     background-color: var(--color-bg-dark);
@@ -180,6 +187,9 @@ li.nav-icon {
 }
 .icontooltip:hover .icontooltiptext {
     visibility: visible;
+    display: inline-block;
+    overflow-x: visible;
+    background-color: var(--color-bg-dark);
 }
 .icontooltip a {
     text-decoration: none;
