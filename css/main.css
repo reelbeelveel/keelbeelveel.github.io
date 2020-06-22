@@ -6,10 +6,10 @@
     src url('../resources/fonts/Hurmit-NF.otf')
 }
 
-/* debug 
+/* debug */
 div { outline: 1px dashed yellow }
 span { outline: 1px dashed red }
-*/
+
 * { box-sizing: border-box; }
 :root {
     --clr-bg-dark: #26282b;
@@ -23,8 +23,8 @@ span { outline: 1px dashed red }
     /*
     --fs-nav: ;
     --lh-hav; ;
-     
-    */
+
+     */
 }
 
 html {
@@ -39,6 +39,12 @@ body {
     margin: 0;
     flex: auto;
 }
+
+header * { 
+    --nav-hgt: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
+    --hov-hgt: 0.2rem;
+}
+
 header ul.bar{
     list-style-type: none;
     margin: 0;
@@ -47,19 +53,33 @@ header ul.bar{
     font-size: var(--fs-nav, 1rem);
     line-height: var(--lh-nav, default);
     background-color: var(--clr-bg-dark);
+    height: calc(var(--nav-hgt) + var(--hov-hgt));
 }
 header ul.bar li {
     display: inline-block;
     height: 100%;
 }
-header ul.bar li.nav-link a {
-    padding: 1rem 1rem 1rem 1rem;
+header ul.bar li a {
     display: block;
+    height: 100%;
+}
+header ul.bar li a span {
+    padding-top: 1rem;
+    display: block;
+    height: var(--nav-hgt);
+    padding: 0 1rem 0 1rem;
+    background-color: var(--clr-bg-dark);
+}
+header ul.bar li.nav-link a {
     text-decoration: none;
     font-family: Arial;
     color: var(--clr-accent-b);
-    height: 100%;
+    background-color: var(--clr-accent-a);
 }
+header ul.bar li.nav-link:hover a {
+    background-color: var(--clr-accent-b);
+}
+
 header ul.bar li.nav-home {
     float: left;
     color: var(--clr-bg-dark);
@@ -68,7 +88,7 @@ header ul.bar li.nav-home {
 
 header ul.bar li a img {
     width: auto;
-    height: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
+    height: var(--nav-hgt);
 }
 header ul.bar li.nav-icon a:hover {
     background-color: var(--clr-bg-lite);
@@ -79,9 +99,7 @@ li.nav-link {
     background-color: var(--clr-bg-dark);
     width: auto;
 }
-li.nav-link:hover{
-    background-color: var(--clr-plaintext);
-}
+
 li.nav-icon {
     float: right;
     color: var(--clr-bg-dark);
