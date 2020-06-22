@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        {% include head.html %}
+        <link rel="stylesheet" type="text/css" href="/css/infobs.css"/>
+        <link rel="icon" href="/resources/icons/favicon{{ page.favicon }}.png" type="image/png"/>
+        <meta name="keywords" content="Kyle Belveal, keelbeelveel, computer science, computer engineering, computer, CS, CE, EECS, engineering, projects, project, {{ page.keywords }}"/>
+        <!-- Layout type = info_basic        -->
+        <!-- Layout revised 6/22/2020 7:44pm -->
+    </head>
+    <body>
+        {% if {{page.banner}} %}
+        {% capture page_banner %}{{ page.banner }}{% endcapture %}
+        {% include header.html banner=page_banner %}
+        {% else %}
+        {% include header.html %}
+        {% endif %}
+        <div id="body" class="contains-flex">
+            <div id="page-container" class="flex">
+                <main>
+                    <div id="content-wrap" class="content-wrap contains-flex">
+                        <div id="flex-left" class="flex left">
+                            <div id="page-header" class="page-header">
+                                <h3 class="page-header">
+                                    <div class="center">
+                                        <div class="icontooltip">
+                                            <a href="{{ page.icon-href }}">
+                                                <img src="{{ page.icon}}" alt="Icon" class="icon">
+                                            </a>
+                                            <span class="icontooltiptext text">
+                                                {{ page.type }}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div id="page-title" class="page-header title">
+                                        {{ page.file-title }}
+                                    </div>
+                                </h3>
+                                <span id="page-desc" class="page-header">
+                                    <h4 class="page-header">
+                                        {{ page.file-desc }}
+                                    </h4>
+                                </span>
+                            </div>
+                            <div id="file-links" class="software-links text center contains-flex">
+                                {{ page.links }}
+                            </div>
+                        </div>
+                        <div id="flex-center" class="flex center">
+                            <div id="" class="file {{ page.file-type }}">
+                                <div id="file-label-type" class="file label text">
+                                    {{ page.type }}
+                                </div>
+                                <div id="file-label-title" class="file label text">
+                                    {{ page.file-label-title }}
+                                </div>
+                                {{ content }}
+                            </div>
+                        </div>
+                        <div id="flex-right" class="flex right center">
+                            <div id="file-info" class="center">
+                                <p>Title: {{ page.file-title }} </p>
+                                <p>Author: {{ page.file-author }}</p>
+                                <p>Revised: {{ page.file-revised }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END OF PAGE CONTENT -->
+                </main>
+            </div>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>

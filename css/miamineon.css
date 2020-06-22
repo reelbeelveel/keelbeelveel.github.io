@@ -1,6 +1,41 @@
-.highlight pre { background-color: #1c1b1a }
-.highlight *  { color: #d7d7ff; font-size: .9vw; }
-.highlight pre code * { height: 1.5vw; padding-top: 4px; padding-bottom: 4px; display: inline-block; }
+.highlight pre { 
+    background-color: #1c1b1a;
+}
+.highlight pre, .rouge-table { 
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.highlight * { 
+    color: #d7d7ff;
+    text-align: left;
+}
+.gutter {
+    padding-right: 1%;
+    background-color: #1c1b1a;
+    text-align: left;
+    padding-left: 1%
+}
+td.code { 
+    max-width: 100%;
+    overflow-x: auto;
+}
+td.code pre {
+    top: -1px;
+    max-width: calc(94.7% - 2em);
+    overflow-x: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+    padding-top: 0.5em;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+.highlight { 
+    display: block;
+}
+.highlight table { border: none; }
 .highlight .lineno { color: #857f78; }
 .highlight .hll { background-color: #1c1b1a }
 .highlight .c { color: #5f875f } /* Comment */

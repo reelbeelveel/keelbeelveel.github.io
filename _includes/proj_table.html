@@ -1,0 +1,14 @@
+<!-- Table Format Revised 6/13/2020 3:12pm -->
+<tr class="proj_table">
+    <td>
+        <a href={{ include.link }}>
+            <img src="{{ include.image }}" width="64" alt="Icon"/>
+        </a>
+    </td>
+    <td>{{ include.title }}</td>
+    <td>{{ include.desc }}</td>
+    <td><a href={{ include.link}}>More info</a></td>
+    {% if include.altlink %}
+    <td><a href={{ include.altlink }}>{{ include.altlinktext }}</a></td>
+    {% endif %}
+</tr>

@@ -1,66 +1,20 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>keelbeelveel.com | Index</title>
-        <!-- Link to main stylesheet-->
-        <link rel="stylesheet" type="text/css" href="/css/main.css"/>
-        <meta charset="UTF-8"/>
-        <meta name="description" content="keelbeelveel.com Hardware page."/>
-        <meta name="keywords" content="Kyle Belveal, keelbeelveel, computer science, computer engineering, computer, CS, CE, EECS, electrical engineering, engineering, projects, project, python, c++, html, css, verilog, "/>
-        <meta name="author" content="Kyle Belveal"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="revised" content="Thurs. May 28th, 2020,  5:59 PM"/>
-        <!-- Layout type - default           -->
-        <!-- Layout revised 6/01/2020 10:28pm -->
-    </head>
-    <div id="body">
-        <body>
-            <div id="page-container">
-                <div id="header" class="header">
-                    <header class="header">
-                        <div id="site-title" class="sitetitle">
-                            <div id="main-sitetitle" class="sitetitle"><h1>
-                                <span style="color: #d7005f">k</span><span style="color: #d7d7ff">eel</span><span style="color: #d75f00">b</span><span style="color: #d7d7ff">eel</span><span style="color: #d7ff00">v</span><span style="color: #d7d7ff">eel</span><span style="color: #87ff00">.com</span>
-                                </h1></div>
-                                <div id="alt-sitetitle" class="sitetitle"><h1>
-                                <span style="color: #d7005f">k</span><span style="color: #d7d7ff">yle</span><span style="color: #d75f00">b</span><span style="color: #d7d7ff">el</span><span style="color: #d7ff00">v</span><span style="color: #d7d7ff">eal</span>
-                                    </h1></div>
-
-                        </div>
-                        <p class="pagesubtitle">EECS projects pulled directly from my skull-meat</p>
-                        <nav class="nav">
-                            <div id="nav" class="nav">
-                                <a class="nav" href = "/index.html">Home</a>
-                                <a class="nav" href = "/projects/projects.html">Projects</a>
-                                <a class="nav" href = "/hardware.html">Hardware</a>
-                                <a class="nav" href = "/midware.html" >Midware</a>
-                                <a class="nav" href = "/software/software.html">Software</a>
-                                <a class="nav" href = "https://delaware.gov/" target = "_blank">Delaware</a>
-                            </div>
-                        </nav>
-                    </header>
-                </div>
-                <div id="content-wrap" class="content-wrap">
-                    <main>
-                        <section>
-                            <div id="page-header" class="page-header">
-    <p>
-        This page will house the many computer hardware projects I've done, including the Digital Clock datapath I have designed and am in the process of producing. This page will house completed circuit diagrams and designs, and new ones as I complete them going forward. I just haven't gotten around to it yet.
-    </p>
+---
+layout: default
+title: keelbeelveel.com | Hardware
+favicon: cpu
+description: keelbeelveel.com Hardware page.
+banner: hardware-banner.png
+revised: Mon. June 22nd, 2020, 6:07 PM
+---
+<div id="page-body" class="page-body">
+    <table>
+        <tr>
+            <td scope="col" class="software-icon"></td>
+            <td scope="col" class="software-title">Title:</td>
+            <td scope="col" class="software-description">Description:</td>
+            <td scope="col" class="software-page"></td>
+            <td scope="col" class="github-page"></td>
+        </tr>
+        {% include table_entry/binary_clock.html %}
+    </table>
 </div>
-
-                        </section>
-                    </main>
-                </div>
-            </div>
-            <div id="footer" class="footer">
-                <footer>
-                    <span> Powered By
-                        <a style="color:#d7005f" href="https://github.com/keelbeelveel/keelbeelveel.github.io">
-                            GitHub
-                        </a>
-                    </span>
-                </footer>
-            </div>
-        </body>
-</html>

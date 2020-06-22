@@ -1,0 +1,24 @@
+<!-- Software Table Revised 6/13/2020 3:32 PM -->
+        <tr class="soft_table">
+            <td class="icon">
+                <a href="{{ include.link }}">
+                    <div class="icontooltip">
+                        <img src="/resources/icons/{{ include.icon }}.png" class="icon" width=64 alt="Python 3.8.2"/>
+                </a>
+                <span class="icontooltiptext text">
+                    {{ include.tiptext }}
+                </span>
+                    </div>
+                    </a>
+            </td>
+            <td>{{ include.title }}</td>
+            <td>
+{{ include.desc }}
+            </td>
+            <td>
+                <a href="{{ include.link }}">More info</a>
+            </td>
+            <td>
+                <a href="https://github.com/keelbeelveel/{{ include.gitlink }}">View this script on GitHub
+            </td>
+        </tr>
