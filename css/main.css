@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/22/2020  6:01 PM */
+/* Stylesheet revised: 6/22/2020  7:21 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -25,7 +25,8 @@ span { outline: 1px dashed red }
     --clr-accent-b-alt: #B00775;
     --clr-plaintext: #e2e2e2;
     --clr-spicytext: #bbbac6;
-
+    --nav-hgt: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
+    --hov-hgt: 0.2rem;
     /*
     --fs-nav: ;
     --lh-hav; ;
@@ -45,10 +46,17 @@ body {
     margin: 0;
     flex: auto;
 }
+.scroll { 
+    position: fixed;
+    display: block;
+    overflow-y: auto;
+    top: calc(var(--nav-hgt) + var(--hov-hgt));
+    bottom: 0;
+    height: auto;
+    padding-bottom: 4em;
+}
 
 header * { 
-    --nav-hgt: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
-    --hov-hgt: 0.2rem;
 }
 
 header ul.bar{
@@ -133,9 +141,13 @@ header ul.bar li.nav-icon a:hover {
 #feed {
     margin-left: 8px;
     margin-right: 8px;
+    padding-bottom: 4em;
+    color: var(--clr-plaintext);
 }
 #feed a {
     width: fit-content;
+    text-decoration: none;
+    color: var(--clr-accent-b);
 }
 #feed div.blurb{
     position: relative;
@@ -143,14 +155,18 @@ header ul.bar li.nav-icon a:hover {
     width: 95%;
     padding: 2.5%;
 }
+#feed .title, #feed time, #feed .siteversion {
+    color: var(--clr-spicytext);
+}
 
 #footer {
-    color: var(--clr-bg-lite);
+    color: var(--clr-accent-a);
     padding-top:  2.5rem-44px;
     padding-left: 4px;
     position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: var(--clr-bg-dark);
 }
 #footer a {
     color: var(--clr-accent-b);
@@ -172,13 +188,14 @@ header ul.bar li.nav-icon a:hover {
     padding-bottom: 4px;
 }
 #page-container {
-    position: relative;
-    min-height: 95vh;
-    width: 85%;
-    position: center;
-    margin-left: 7.5%;
-    margin-right: auto;
+    position: fixed;
+    display: block;
     overflow-y: auto;
+    top: calc(var(--nav-hgt) + var(--hov-hgt));
+    bottom: 0;
+    height: auto;
+    min-width: 100vw;
+    padding-bottom: 4em;
 }
 #page-body td, table, th {
     border-collapse: collapse;
@@ -195,7 +212,9 @@ header ul.bar li.nav-icon a:hover {
 .center {
     display: block;
     margin-left: auto;
+    margin-right: auto;
     width: 99%;
+    text-align: center;
 }
 .center p {
     text-align: center;

@@ -5,11 +5,14 @@
     max-width: 100%;
     overflow-x: hidden;
 }
-.highlight * { color: #d7d7ff; }
+.highlight * { 
+    color: #d7d7ff;
+    text-align: left;
+}
 .gutter {
     padding-right: 1%;
     background-color: #1c1b1a;
-    text-align: center;
+    text-align: left;
     padding-left: 1%
 }
 td.code { 
