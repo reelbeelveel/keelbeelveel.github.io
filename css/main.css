@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/22/2020 10:08 AM */
+/* Stylesheet revised: 6/22/2020 10:25 AM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -11,8 +11,17 @@ div { outline: 1px dashed yellow }
 span { outline: 1px dashed red }
 
 * { box-sizing: border-box; }
+:root {
+    --color-bg-dark: #4d5057;
+    --color-bg-light: #696E77;
+    --color-accent-a: #87ff00;
+    --color-accent-b: #F62DAE;
+    --color-plaintext: #e2e2e2;
+    --color-spicytext: #bbbac6;
+}
+
 html {
-    background-color: #696e77;
+    background-color: var(--color-bg-light);
     font-family: Hack;
     overflow-x: hidden;
 }
@@ -28,7 +37,7 @@ header ul.bar{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #4d5057;
+    background-color: var(--color-bg-dark);
 }
 header ul.bar li {
     display: inline-block;
@@ -44,33 +53,21 @@ header ul.bar li a {
 }
 li.nav-home {
     float: left;
-    color: #4d5057;
-    background-color: #87ff00;
+    color: var(--color-bg-dark);
+    background-color: var(--color-accent-a);
 }
 li.nav-link {
     float: left;
-    background-color: #4d5057;
+    background-color: var(--color-bg-dark);
     width: auto;
 }
 li.nav-link:hover{
-    background-color: #e2e2e2;
+    background-color: var(--color-plaintext);
 }
 li.nav-icon {
     float: right;
-    color: #4d5057;
-    background-color: #f62dae;
-}
-span#nav a {
-    font-family: Arial;
-    color: #e2e2e2;
-    background: #4d5057;
-    width: fit-content;
-    text-decoration: none;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-span#nav a:hover{
-    color: #bbbac6;
+    color: var(--color-bg-dark);
+    background-color: var(--color-accent-b);
 }
 #body {
     padding-bottom: 5vh;
@@ -88,7 +85,7 @@ span#nav a:hover{
 #feed a {
     width: fit-content;
 }
-#feed div.blurb{ 
+#feed div.blurb{
     position: relative;
     align: center;
     width: 95%;
@@ -96,7 +93,7 @@ span#nav a:hover{
 }
 
 #footer {
-    color: #d7d7ff;
+    color: var(--color-bg-light);
     padding-top:  2.5rem-44px;
     padding-left: 4px;
     position: absolute;
@@ -104,17 +101,17 @@ span#nav a:hover{
     width: 100%;
 }
 #footer a {
-    color: #d7005f;
+    color: var(--color-accent-b);
 }
 #hoverbox { width: fit-content; }
 #hoverbox:hover #main-sitetitle { visibility: hidden; }
 #hoverbox:hover #alt-sitetitle { visibility: visible; }
 #header {
-    background: #4d5057;
+    background: var(--color-bg-dark);
 }
-#main-sitetitle { 
+#main-sitetitle {
     position: relative;
-    visibility: visible; 
+    visibility: visible;
 }
 #page-header {
     padding-left: 10px;
@@ -133,15 +130,15 @@ span#nav a:hover{
 }
 #page-body td, table, th {
     border-collapse: collapse;
-    color: #d7ff00;
-    border: 2px solid #d7d7ff;
+    color: var(--color-accent-b);
+    border: 2px solid var(--color-plaintext);
     padding-left: 2px;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-right: 2px;
 }
 #page-body td a {
-    color: #87ffa7;
+    color: var(--color-accent-a);
 }
 .center {
     display: block;
@@ -172,7 +169,7 @@ span#nav a:hover{
 .icontooltip .icontooltiptext {
     visibility: hidden;
     width: 90%;
-    color: #0f0;
+    color: var(--color-accent-a);
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
@@ -198,7 +195,7 @@ span#nav a:hover{
     font-align: left;
 }
 .page-header {
-    color: #87ff00;
+    color: var(--color-accent-a);
 }
 .right {
     font-align: right;
