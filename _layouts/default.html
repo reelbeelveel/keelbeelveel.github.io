@@ -9,8 +9,10 @@
     </head>
     <div id="body">
         <body>
-            {% if {{page.banner}} %}
-            {% capture page_banner %}{{ page.banner }}{% endcapture %}
+            {% if page.banner %}
+            {% capture page_banner %}
+            {{ page.banner }}
+            {% endcapture %}
             {% include header.html banner=page_banner %}
             {% else %}
             {% include header.html %}

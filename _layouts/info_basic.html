@@ -9,9 +9,16 @@
         <!-- Layout revised 6/13/2020 5:45pm -->
     </head>
     <body>
+        {% if page.banner %}
+        {% capture page_banner %}
+        {{ page.banner }}
+        {% endcapture %}
+        {% include header.html banner=page_banner %}
+        {% else %}
+        {% include header.html %}
+        {% endif %}
         <div id="body" class="contains-flex">
             <div id="page-container" class="flex">
-                {% include header.html %}
                 <main>
                     <div id="content-wrap" class="content-wrap contains-flex">
                         <div id="flex-left" class="flex left">
