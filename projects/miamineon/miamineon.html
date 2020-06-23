@@ -1,44 +1,89 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>keelbeelveel.com | miamineon</title>
+        <!-- Head Revised 6/22/2020 6:28 PM -->
+<link rel="stylesheet" type="text/css" href="/css/main.css"/>
+<meta name="author" content="Kyle Belveal"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="revised" content="Mon. June 1st, 2020, 10:29pm"/>
+<meta name="description" content="keelbeelveel.com miamineon project page."/>
+<title>keelbeelveel.com | miamineon</title>
+<meta charset="UTF-8"/>
+
         <link rel="stylesheet" type="text/css" href="/css/infoproj.css"/>
-        <meta charset="UTF-8"/>
-        <meta name="description" content="keelbeelveel.com miamineon project page."/>
+        <link rel="icon" href="/resources/icons/favicon.png" type="image/png"/>
         <meta name="keywords" content="Kyle Belveal, keelbeelveel, computer science, computer engineering, computer, CS, CE, EECS, engineering, projects, project, vim, vim-airline, vim-plug, plugin, vimscript, colorscheme, neon, color, miamineon"/>
-        <meta name="author" content="Kyle Belveal"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="revised" content="Mon. June 1st, 2020, 10:29pm"/>
         <!-- Layout type = info_project   -->
-        <!-- Layout revised 6/1/2020 10:28pm -->
+        <!-- Layout revised 6/22/2020 08:08pm -->
     </head>
     <body>
+        
+        <!-- Header revised 6/22/2020  6:32 PM -->
+<div id="header" class="header">
+    <header class="header">
+        <ul class="bar">
+            <li class="nav-home">
+                <a href="/index.html">
+                    <img src="/resources/icons/home.png"/>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="/hardware.html">
+                    <span class"lbl">
+                        Hardware
+                    </span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="/midware.html">
+                    <span class="lbl">
+                        Midware
+                    </span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="/software/software.html">
+                    <span class="lbl">
+                        Software
+                    </span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="/projects/projects.html">
+                    <span class="lbl">
+                        All Projects
+                    </span>
+                </a>
+            </li>
+            
+            </li>
+            <li class="nav-icon">
+                <a href="/about.html">
+                    <img src="/resources/icons/contact.png"/>
+                </a>
+            </li>
+            <li class="nav-icon">
+                <a href="https://github.com/keelbeelveel">
+                    <img src="/resources/icons/github.png"/>
+                </a>
+            </li>
+            <li class="nav-icon">
+                <a href="https://www.linkedin.com/in/keelbeelveel/">
+                    <img src="/resources/icons/linkedin.png"/>
+                </a>
+            </li>
+            <li class="nav-icon">
+                <a href="mailto:k.belveal17@gmail.com?subject=Contact from keelbeelveel.com">
+                    <img src="/resources/icons/mailto.png"/>
+                </a>
+            </li>
+        </ul>
+    </header>
+</div>
+
+        
         <div id="body" class="contains-flex">
             <div id="page-container" class="flex">
-                <div id="header" class="header">
-                    <header class="header">
-                        <div id="site-title" class="sitetitle">
-                            <div id="main-sitetitle" class="sitetitle"><h1>
-                                <span style="color: #d7005f">k</span><span style="color: #d7d7ff">eel</span><span style="color: #d75f00">b</span><span style="color: #d7d7ff">eel</span><span style="color: #d7ff00">v</span><span style="color: #d7d7ff">eel</span><span style="color: #87ff00">.com</span>
-                                </h1></div>
-                                <div id="alt-sitetitle" class="sitetitle"><h1>
-                                <span style="color: #d7005f">k</span><span style="color: #d7d7ff">yle</span><span style="color: #d75f00">b</span><span style="color: #d7d7ff">el</span><span style="color: #d7ff00">v</span><span style="color: #d7d7ff">eal</span>
-                                    </h1></div>
-
-                        </div>
-                        <p class="pagesubtitle">EECS projects pulled directly from my skull-meat</p>
-                        <nav class="nav">
-                            <div id="nav" class="nav">
-                                <a class="nav" href = "/index.html">Home</a>
-                                <a class="nav" href = "/projects/projects.html">Projects</a>
-                                <a class="nav" href = "/hardware.html">Hardware</a>
-                                <a class="nav" href = "/midware.html" >Midware</a>
-                                <a class="nav" href = "/software/software.html">Software</a>
-                                <a class="nav" href = "https://delaware.gov/" target = "_blank">Delaware</a>
-                            </div>
-                        </nav>
-                    </header>
-                </div>
                 <main>
                     <div id="content-wrap" class="content-wrap contains-flex">
                         <div id="flex-left" class="flex left">
@@ -69,7 +114,7 @@
                             </div>
                         </div>
                         <div id="flex-center" class="flex center">
-                                <div id="proj-overview" class="proj-overview">
+                            <div id="proj-overview" class="proj-overview">
     <div id="description" class="description">
         <h3>Description:</h3>
         <p>
@@ -92,16 +137,24 @@
         <p>To install miamineon, use the following commands in a linux environment:</p>
         <p>(Note: The third and fourth lines are for airline users only.)</p>
         <p>
-        <figure class="highlight"><pre><code class="language-raw" data-lang="raw"><span></span><span class="lineno">1 </span><span class="err">git clone https://github.com/keelbeelveel/miamineon.git</span>
-<span class="lineno">2 </span><span class="err">mv miamineon.vim ~/.vim/colors/</span>
-<span class="lineno">3 </span><span class="err">mv miamineon-airline.vim \</span>
-<span class="lineno">4 </span><span class="err">~/.vim/plugged/vim-airline-themes/autoload/airline/themes/miamineon.vim</span></code></pre></figure>
+        <figure class="highlight"><pre><code class="language-raw" data-lang="raw"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>git clone https://github.com/keelbeelveel/miamineon.git
+mv miamineon.vim ~/.vim/colors/
+mv miamineon-airline.vim \
+~/.vim/plugged/vim-airline-themes/autoload/airline/themes/miamineon.vim
+</pre></td></tr></tbody></table></code></pre></figure>
         </p>
         <p>Additionally, add the following to your .vimrc file:</p>
         <p>(Note: The second line is unnecessary for non-airline users)</p>
         <p>
-            <figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="lineno">1 </span><span class="k">colorscheme</span> miamineon
-<span class="lineno">2 </span><span class="k">let</span> <span class="k">g</span>:airline_theme <span class="p">=</span> <span class="s1">&#39;miamineon&#39;</span></code></pre></figure>
+            <figure class="highlight"><pre><code class="language-vim" data-lang="vim"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="k">colorscheme</span> miamineon
+<span class="k">let</span> <span class="nv">g:airline_theme</span> <span class="p">=</span> <span class="s1">'miamineon'</span>
+</pre></td></tr></tbody></table></code></pre></figure>
         </p>
     </div>
 </div>
@@ -118,15 +171,17 @@
                     <!-- END OF PAGE CONTENT -->
                 </main>
             </div>
-            <div id="footer" class="footer">
-                <footer>
-                    <span> Powered By
-                        <a style="color:#d7005f" href="https://github.com/keelbeelveel/keelbeelveel.github.io">
-                            GitHub
-                        </a>
-                    </span>
-                </footer>
-            </div>
         </div>
+        <!-- Footer revised 6/13/2020 2:26 PM -->
+<div id="footer" class="footer">
+    <footer>
+        <span> Powered By
+            <a style="color:#d7005f" href="https://github.com/keelbeelveel/keelbeelveel.github.io">
+                GitHub
+            </a>
+        </span>
+    </footer>
+</div>
+
     </body>
 </html>
