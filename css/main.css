@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/22/2020  8:30 PM */
+/* Stylesheet revised: 6/23/2020 10:16 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -17,16 +17,22 @@ span { outline: 1px dashed red }
      * alt shades are 6 steps
      * lighter than the prim.
      */
+
     --clr-bg-dark: #26282b;
     --clr-bg-lite: #4d5056;
     --clr-accent-a: #87ff00;
     --clr-accent-a-alt: #4C8F00;
     --clr-accent-b: #F62DAE;
     --clr-accent-b-alt: #B00775;
+    --clr-accent-c: #FAA916;
     --clr-plaintext: #e2e2e2;
     --clr-spicytext: #bbbac6;
     --nav-hgt: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
     --hov-hgt: 0.2rem;
+
+    /* TODO vv */
+    --mw-wd: 100px;
+    --mw-ht: var(--nav-hgt);
     /*
     --fs-nav: ;
     --lh-hav; ;
@@ -46,15 +52,6 @@ body {
     margin: 0;
     flex: auto;
 }
-.scroll { 
-    position: fixed;
-    display: block;
-    overflow-y: auto;
-    top: calc(var(--nav-hgt) + var(--hov-hgt));
-    bottom: 0;
-    height: auto;
-    padding-bottom: 4em;
-}
 
 header * { 
 }
@@ -73,7 +70,7 @@ header ul.bar li {
     display: inline-block;
     height: 100%;
 }
-header ul.bar li a {
+header ul.bar li a, header ul.bar li #a {
     display: block;
     height: 100%;
 }
@@ -114,8 +111,27 @@ header ul.bar li.nav-link:hover a {
     background-color: var(--clr-accent-a-alt);
 }
 
-header ul.bar li.nav-banner img {
+header ul.bar li.nav-banner{
+    width: auto;
+    overflow: hidden;
+    display: list-item;
+}
 
+header ul.bar li.nav-banner span#a {
+    background-image: linear-gradient(to right, var(--clr-accent-a), var(--clr-accent-b));
+    width: 100%;
+}
+
+header ul.bar li.nav-banner span#a span.banner {
+    --sz: var(--nav-hgt);
+    display: inline-block;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--sz);
+    background-color: var(--clr-bg-dark);
+    background-size: var(--sz) var(--sz);
+    background-repeat: repeat;
 }
 
 header ul.bar li.nav-icon {
@@ -125,7 +141,7 @@ header ul.bar li.nav-icon {
 }
 
 header ul.bar li.nav-icon a:hover {
-    background-color: var(--clr-bg-lite);
+    background-color: var(--clr-accent-b-alt);
 }
 
 
