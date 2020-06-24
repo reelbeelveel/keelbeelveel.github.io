@@ -17,12 +17,14 @@ span { outline: 1px dashed red }
      * alt shades are 6 steps
      * lighter than the prim.
      */
+
     --clr-bg-dark: #26282b;
     --clr-bg-lite: #4d5056;
     --clr-accent-a: #87ff00;
     --clr-accent-a-alt: #4C8F00;
     --clr-accent-b: #F62DAE;
     --clr-accent-b-alt: #B00775;
+    --clr-accent-c: #FAA916;
     --clr-plaintext: #e2e2e2;
     --clr-spicytext: #bbbac6;
     --nav-hgt: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
