@@ -1,4 +1,4 @@
-<!-- Header revised 6/23/2020  8:57 PM -->
+<!-- Header revised 6/23/2020  9:45 PM -->
 <div id="header" class="header">
     <header class="header">
         <ul class="bar">
@@ -58,8 +58,8 @@
             <li class="nav-banner">
                 <span id='a'>
             {% if include.banner %}
-                <span class="banner" style="background-image: url('/resources/banners/{{ include.banner }}');">
-                </span>
+            {{ include.banner_properties }}
+                <span class="banner" style="background-image: url('/resources/banners/{{ include.banner }}');"></span>
             {% endif %}
                 </span>
             </li>
