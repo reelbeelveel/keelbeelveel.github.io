@@ -30,8 +30,9 @@ span { outline: 1px dashed red }
     --nav-hgt: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
     --hov-hgt: 0.2rem;
 
+    /* TODO vv */
     --mw-wd: 100px;
-    --mw-ht: 100px;
+    --mw-ht: var(--nav-hgt);
     /*
     --fs-nav: ;
     --lh-hav; ;
