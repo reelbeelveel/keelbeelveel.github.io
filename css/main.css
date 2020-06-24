@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/23/2020  8:57 PM */
+/* Stylesheet revised: 6/23/2020 10:16 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -29,6 +29,9 @@ span { outline: 1px dashed red }
     --clr-spicytext: #bbbac6;
     --nav-hgt: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
     --hov-hgt: 0.2rem;
+
+    --mw-wd: 100px;
+    --mw-ht: 100px;
     /*
     --fs-nav: ;
     --lh-hav; ;
