@@ -46,15 +46,6 @@ body {
     margin: 0;
     flex: auto;
 }
-.scroll { 
-    position: fixed;
-    display: block;
-    overflow-y: auto;
-    top: calc(var(--nav-hgt) + var(--hov-hgt));
-    bottom: 0;
-    height: auto;
-    padding-bottom: 4em;
-}
 
 header * { 
 }
@@ -73,7 +64,7 @@ header ul.bar li {
     display: inline-block;
     height: 100%;
 }
-header ul.bar li a {
+header ul.bar li a, header ul.bar li #a {
     display: block;
     height: 100%;
 }
@@ -114,8 +105,20 @@ header ul.bar li.nav-link:hover a {
     background-color: var(--clr-accent-a-alt);
 }
 
-header ul.bar li.nav-banner img {
+header ul.bar li.nav-banner span#a {
+background-image: linear-gradient(to right, var(--clr-accent-a), var(--clr-accent-b));
+}
 
+header ul.bar li.nav-banner span#a span.banner {
+    --sz: var(--nav-hgt);
+    display: inline-block;
+    left: 0;
+    right: 0;
+    width: 281px;
+    height: var(--sz);
+    background-color: #F00;
+    background-size: var(--sz) var(--sz);
+    background-repeat: repeat;
 }
 
 header ul.bar li.nav-icon {
