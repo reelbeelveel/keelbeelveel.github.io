@@ -125,7 +125,7 @@ header ul.bar li.nav-banner span#a span.banner {
     right: 0;
     width: 100%;
     height: var(--sz);
-    background-color: #F00;
+    background-color: var(--clr-bg-dark);
     background-size: var(--sz) var(--sz);
     background-repeat: repeat;
 }
@@ -137,7 +137,7 @@ header ul.bar li.nav-icon {
 }
 
 header ul.bar li.nav-icon a:hover {
-    background-color: var(--clr-bg-lite);
+    background-color: var(--clr-accent-b-alt);
 }
 
 
