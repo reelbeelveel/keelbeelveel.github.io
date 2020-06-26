@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/26/2020  4:18 PM */
+/* Stylesheet revised: 6/26/2020  4:48 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -55,20 +55,32 @@ body {
 
 header * { 
 }
-
-header ul.bar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-size: var(--fs-nav, 1rem);
-    line-height: var(--lh-nav, default);
-    background-color: var(--clr-bg-dark);
-    height: calc(var(--nav-hgt) + var(--hov-hgt));
+    header ul.bar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-size: var(--fs-nav, 1rem);
+        line-height: var(--lh-nav, default);
+        background-color: var(--clr-bg-dark);
+        height: calc(var(--nav-hgt) + var(--hov-hgt));
+    }
+@media screen and (max-width: 700px){
+    header ul.bar {
+    }
+    header ul.bar li {
+        float: none;
+        display: block;
+    }
 }
-header ul.bar li {
+@media screen and (min-width: 700px) {
+    header ul.bar li {
     display: inline-block;
     height: 100%;
+}
+header ul.bar li.nav-link, header ul.bar li.nav-home {
+    float: left;
+}
 }
 header ul.bar li a, header ul.bar li #a {
     display: block;
@@ -89,13 +101,11 @@ header ul.bar li.nav-home:hover a {
 }
 
 header ul.bar li.nav-home {
-    float: left;
     color: var(--clr-bg-dark);
     background-color: var(--clr-accent-a);
 }
 
 header ul.bar li.nav-link {
-    float: left;
     background-color: var(--clr-bg-dark);
     width: auto;
 }
@@ -156,6 +166,9 @@ header ul.bar li.nav-icon{
         width: calc(var(--nav-hgt)/2);
         height: calc(var(--nav-hgt)/2);
     }
+}
+ul.nav-icon { 
+    padding: 0;
 }
 ul.nav-icon li.nav-icon {
     display: block;
