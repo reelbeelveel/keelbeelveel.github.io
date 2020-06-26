@@ -1,4 +1,4 @@
-/* Revised 6/13/2020 6:59 PM */
+/* Revised 6/25/2020 11:37PM */
 @import "miamineon.css";
 @import "main.css";
 
@@ -12,4 +12,14 @@ div#label ul {
 div#label ul li {
     display: inline-block;
     padding:
+}
+
+div#label ul li span.key {
+    background-color: var(--clr-accent-a-alt);
+    color: var(--clr-accent-b);
+}
+
+div#label ul li span.value {
+    background-color: var(--clr-accent-b-alt);
+    color: var(--clr-accent-a);
 }
