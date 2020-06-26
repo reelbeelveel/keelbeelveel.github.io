@@ -2,51 +2,8 @@
 @import "miamineon.css";
 @import "main.css";
 
-.highlight {
-    overflow-x: auto;
+div#label ul {
     display: flex;
-    border: 2px solid #666462;
-}
-.highlight * {
-    margin: 0;
-    flex: 1;
-}
-#flex-left {
-}
-img.icon {
-}
-#flex-right {
-}
-.icontooltip .icontooltiptext {
-  visibility: hidden;
-  width: 70%;
-  top: 40%;
-  left: 15%;
-}
-figure {
-    margin: 0;
-}
-
-.file{ } 
-
-
-.file .label {
-}
-.file a {
-}
-.filebody {
-}
-#file-label-type
-{
-}
-#file-label-title
-{
-}
-
-#file-links {
-}
-#file-links td {
-}
-
-#file-links * {
+    flex-flow: row wrap;
+    
 }
