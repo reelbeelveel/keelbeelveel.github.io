@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/26/2020  4:48 PM */
+/* Stylesheet revised: 6/26/2020  5:12 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -40,7 +40,7 @@ span { outline: 1px dashed red }
 @media screen and (max-width: 700px){
     :root {
         --nav-hgt: 10vh;
-        --hov-hgt: 400px; 
+        --hov-hgt: calc(var(--nav-hgt) + 40px); 
     }
     header ul.bar {
     }
@@ -171,7 +171,6 @@ header ul.bar li.nav-icon{
     }
     header ul.bar li.nav-icon ul.nav-icon li.nav-icon a {
         display: block;
-        height: calc(var(--hov-hgt)/2);
     }
     header ul.bar li.nav-icon ul.nav-icon li.nav-icon a img {
         width: calc(var(--nav-hgt)/2);
