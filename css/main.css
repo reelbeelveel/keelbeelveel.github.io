@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/23/2020 10:16 PM */
+/* Stylesheet revised: 6/26/2020  3:11 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -144,6 +144,24 @@ header ul.bar li.nav-icon a:hover {
     background-color: var(--clr-accent-b-alt);
 }
 
+span.code_type { background-color: var(--clr-accent-a); }
+
+span.code_type div.code_info {
+    background-color: var(--clr-bg-dark);
+    color: var(--clr-plaintext);
+    display: block;
+}
+span.code_type:not(:hover) div.code_info, span.code_type div.code_info * {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+span.code_type span.code_type {
+    color: var(--clr-spicytext);
+}
+span.code_type span.code_type a {
+    text-decoration: none;
+}
 
 #body {
     padding-bottom: 5vh;
