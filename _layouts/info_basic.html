@@ -18,28 +18,49 @@
         <div id="body" class="contains-flex">
             <div id="page-container" class="flex">
                 <main>
-                    <img src="{{ page.icon}}" alt="Icon" class="icon">
                     <div id="label">
                         <ul>
                             <li>
+                                <img src="{{ page.icon}}" alt="Icon" class="icon">
+                            </li>
+                            <li>
+                                <span class="key">
+                                    Type:
+                                </span>
                                 <a href="{{ page.type-href }}">
                                     {{ page.type }}
                                 </a>
                             </li>
                             <li>
-                                {{ page.file-title }}
+                                <span class="key">
+                                    Title:
+                                </span>
+                                <span class="value">
+                                    {{ page.file-title }}
+                                </span>
                             </li>
                             <li>
-                                {{ page.file-desc }}
+                                <span class="key">
+                                    Description:
+                                </span>
+                                <span class="value">
+                                    {{ page.file-desc }}
+                                </span>
                             </li>
                             <li>
+                                <span class="key">
+                                    Links:
+                                </span>
                                 {{ page.links }}
+                                </span>
                             </li<
                             <li>
-                                {{ page.type }}
-                            </li>
-                            <li>
-                                {{ page.file-label-title }}
+                                <span class="key">
+
+                                </span>
+                                <span class="value">
+                                    {{ page.file-label-title }}
+                                </span>
                             </li>
                         </ul>
                     </div>

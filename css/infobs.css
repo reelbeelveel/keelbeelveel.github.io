@@ -5,5 +5,11 @@
 div#label ul {
     display: flex;
     flex-flow: row wrap;
-    
+    justify-content: center;
+    align-content: center;
+}
+
+div#label ul li {
+    display: inline-block;
+    padding:
 }
