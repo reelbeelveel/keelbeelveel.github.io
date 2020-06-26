@@ -27,8 +27,6 @@ span { outline: 1px dashed red }
 --clr-accent-c: #FAA916;
 --clr-plaintext: #e2e2e2;
 --clr-spicytext: #bbbac6;
---nav-hgt: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
---hov-hgt: 0.2rem;
 
 /* TODO vv */
 --mw-wd: 100px;
@@ -39,6 +37,36 @@ span { outline: 1px dashed red }
 
  */
 }
+@media screen and (max-width: 700px){
+    :root {
+        --nav-hgt: 10vh;
+        --hov-hgt: 400px; 
+    }
+    header ul.bar {
+    }
+    header ul.bar li {
+        float: none;
+        display: inline-block;
+        top: 0;
+        margin: 0;
+        position: relative;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 700px) {
+    :root {
+--nav-hgt: calc(2rem + var(--lh-nav, calc(1.1475 * var(--fs-nav, 1rem))));
+--hov-hgt: calc(var(--nav-hgt) + 0.2rem);
+    }
+    header ul.bar li {
+    display: inline-block;
+    height: 100%;
+}
+header ul.bar li.nav-link, header ul.bar li.nav-home {
+    float: left;
+}
+}
+
 
 html {
     background-color: var(--clr-bg-lite);
@@ -63,25 +91,8 @@ header * {
         font-size: var(--fs-nav, 1rem);
         line-height: var(--lh-nav, default);
         background-color: var(--clr-bg-dark);
-        height: calc(var(--nav-hgt) + var(--hov-hgt));
+        height: var(--hov-hgt);
     }
-@media screen and (max-width: 700px){
-    header ul.bar {
-    }
-    header ul.bar li {
-        float: none;
-        display: block;
-    }
-}
-@media screen and (min-width: 700px) {
-    header ul.bar li {
-    display: inline-block;
-    height: 100%;
-}
-header ul.bar li.nav-link, header ul.bar li.nav-home {
-    float: left;
-}
-}
 header ul.bar li a, header ul.bar li #a {
     display: block;
     height: 100%;
@@ -160,7 +171,7 @@ header ul.bar li.nav-icon{
     }
     header ul.bar li.nav-icon ul.nav-icon li.nav-icon a {
         display: block;
-        height: calc(calc(var(--nav-hgt) + var(--hov-hgt))/2);
+        height: calc(var(--hov-hgt)/2);
     }
     header ul.bar li.nav-icon ul.nav-icon li.nav-icon a img {
         width: calc(var(--nav-hgt)/2);
@@ -271,7 +282,7 @@ span.code_type span.code_type a {
     position: fixed;
     display: block;
     overflow-y: auto;
-    top: calc(var(--nav-hgt) + var(--hov-hgt));
+    top: var(--hov-hgt);
     bottom: 0;
     height: auto;
     min-width: 100vw;
