@@ -1,4 +1,4 @@
-/* Revised 6/25/2020 11:37PM */
+/* Revised 6/26/2020  1:43PM */
 @import "miamineon.css";
 @import "main.css";
 
@@ -22,4 +22,14 @@ div#label ul li span.key, div#label ul li span.key * {
 div#label ul li span.value, div#label ul li span.value * {
     background-color: var(--clr-accent-b-alt);
     color: var(--clr-accent-a);
+}
+
+div#content-wrap {
+    display: flex;
+    flex-flow: wrap column;
+}
+
+div#content-wrap main div#subtiles {
+    display: flex;
+    flex-flow: wrap row;
 }
