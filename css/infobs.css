@@ -14,12 +14,12 @@ div#label ul li {
     padding:
 }
 
-div#label ul li span.key {
+div#label ul li span.key, div#label ul li span.key * {
     background-color: var(--clr-accent-a-alt);
     color: var(--clr-accent-b);
 }
 
-div#label ul li span.value {
+div#label ul li span.value, div#label ul li span.value * {
     background-color: var(--clr-accent-b-alt);
     color: var(--clr-accent-a);
 }
