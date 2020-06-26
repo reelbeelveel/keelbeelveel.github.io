@@ -6,7 +6,7 @@
         <link rel="icon" href="/resources/icons/favicon{{ page.favicon }}.png" type="image/png"/>
         <meta name="keywords" content="Kyle Belveal, keelbeelveel, computer science, computer engineering, computer, CS, CE, EECS, engineering, projects, project, {{ page.keywords }}"/>
         <!-- Layout type = info_project   -->
-        <!-- Layout revised 6/22/2020 08:08pm -->
+        <!-- Layout revised 6/26/2020 01:31pm -->
     </head>
     <body>
         {% if page.banner %}
@@ -15,51 +15,36 @@
         {% else %}
         {% include header.html %}
         {% endif %}
-        <div id="body" class="contains-flex">
-            <div id="page-container" class="flex">
-                <main>
-                    <div id="content-wrap" class="content-wrap contains-flex">
-                        <div id="flex-left" class="flex left">
-                            <div id="page-header" class="page-header">
-                                <h3 class="page-header">
-                                    <div class="center">
-                                        <div class="icontooltip">
-                                            <a href="{{ page.icon-href }}">
-                                                <img src="{{ page.icon}}" alt="Icon" class="icon">
-                                            </a>
-                                            <span class="icontooltiptext text">
-                                                {{ page.type }}
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div id="page-title" class="page-header title">
-                                        {{ page.proj-title }}
-                                    </div>
-                                </h3>
-                                <span id="page-desc" class="page-header">
-                                    <h4 class="page-header">
-                                        {{ page.proj-desc }}
-                                    </h4>
+        <div id="body" s="contains-flex">
+            <div id="page-container" class="scroll">
+                <div id="content-wrap" class="content-wrap">
+                    <main>
+                        <div class="subtile">
+                            <div class="icontooltip">
+                                <a href="{{ page.icon-href }}">
+                                    <img src="{{ page.icon}}" alt="Icon" class="icon">
+                                </a>
+                                <span class="icontooltiptext text">
+                                    {{ page.type }}
                                 </span>
-                            </div>
-                            <div id="project-links" class="project-links text center contains-flex">
+                                {{ page.proj-title }}
+                                {{ page.proj-desc }}
                                 {{ page.links }}
                             </div>
                         </div>
-                        <div id="flex-center" class="flex center">
+                        <div class="subtile">
+                            <p>Title: {{ page.proj-title }} </p>
+                            <p>Author: {{ page.proj-author }}</p>
+                            <p>Revised: {{ page.proj-revised }}</p>
+                        </div>
+                        <div class="tile">
+
                             {{ content }}
                         </div>
-                        <div id="flex-right" class="flex right center">
-                            <div id="proj-info" class="center">
-                                <p>Title: {{ page.proj-title }} </p>
-                                <p>Author: {{ page.proj-author }}</p>
-                                <p>Revised: {{ page.proj-revised }}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END OF PAGE CONTENT -->
-                </main>
+                    </main>
+                </div>
             </div>
+            <!-- END OF PAGE CONTENT -->
         </div>
         {% include footer.html %}
     </body>
