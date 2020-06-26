@@ -31,5 +31,29 @@ div#content-wrap {
 
 div#content-wrap main div#subtiles {
     display: flex;
-    flex-flow: wrap row;
+    --min-wdth: 350px;
+}
+
+div#content-wrap main div#subtiles .subtile {
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
+
+div#id-info img {
+    width: 3em;
+    height: auto;
+}
+
+
+/* Fill in Minimum subtile width * no of subs vv */
+@media screen and (max-width: 700px){
+    div#content-wrap main div#subtiles {
+        flex-flow: wrap column;
+    }
+}
+@media screen and (min-width: 700px){
+    div#content-wrap main div@subtiles {
+        flex-flow: wrap row;
+        width: 50%;
+    }
 }

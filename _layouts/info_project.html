@@ -6,7 +6,7 @@
         <link rel="icon" href="/resources/icons/favicon{{ page.favicon }}.png" type="image/png"/>
         <meta name="keywords" content="Kyle Belveal, keelbeelveel, computer science, computer engineering, computer, CS, CE, EECS, engineering, projects, project, {{ page.keywords }}"/>
         <!-- Layout type = info_project   -->
-        <!-- Layout revised 6/26/2020 01:36pm -->
+        <!-- Layout revised 6/26/2020 02:07pm -->
     </head>
     <body>
         {% if page.banner %}
@@ -20,33 +20,31 @@
                 <div id="content-wrap" class="content-wrap">
                     <main>
                         <div id="subtiles" class="tile">
-                        <div class="subtile">
-                            <div class="icontooltip">
+                            <div id="id-info" class="subtile">
+                                <img src="{{ page.icon}}" alt="Icon" class="icon">
                                 <a href="{{ page.icon-href }}">
-                                    <img src="{{ page.icon}}" alt="Icon" class="icon">
+                                    LINK
                                 </a>
-                                <span class="icontooltiptext text">
-                                    {{ page.type }}
-                                </span>
                                 {{ page.proj-title }}
                                 {{ page.proj-desc }}
+                                {{ page.type }}
                                 {{ page.links }}
                             </div>
+                            <div class="subtile">
+                                <p>Title: {{ page.proj-title }} </p>
+                                <p>Author: {{ page.proj-author }}</p>
+                                <p>Revised: {{ page.proj-revised }}</p>
+                            </div>
                         </div>
-                        <div class="subtile">
-                            <p>Title: {{ page.proj-title }} </p>
-                            <p>Author: {{ page.proj-author }}</p>
-                            <p>Revised: {{ page.proj-revised }}</p>
-                        </div>
-                        </div>
-                        <div class="tile">
-
-                            {{ content }}
-                        </div>
-                    </main>
                 </div>
+                <div class="tile">
+
+                    {{ content }}
+                </div>
+                    </main>
             </div>
-            <!-- END OF PAGE CONTENT -->
+        </div>
+        <!-- END OF PAGE CONTENT -->
         </div>
         {% include footer.html %}
     </body>
