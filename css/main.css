@@ -1,4 +1,4 @@
-/* Stylesheet revised: 6/26/2020  3:11 PM */
+/* Stylesheet revised: 6/26/2020  4:18 PM */
 @font-face {
     font-family: Hack;
     src: url('../resources/fonts/Hack-Regular.ttf');
@@ -133,14 +133,37 @@ header ul.bar li.nav-banner span#a span.banner {
     background-size: var(--sz) var(--sz);
     background-repeat: repeat;
 }
-
-header ul.bar li.nav-icon {
+header ul.bar li.nav-icon{
     float: right;
+}
+@media screen and (min-width: 1000px){
+    header ul.bar li.nav-icon ul.nav-icon {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+@media screen and (max-width: 1000px){
+    header ul.bar li.nav-icon ul.nav-icon {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    header ul.bar li.nav-icon ul.nav-icon li.nav-icon a {
+        display: block;
+        height: calc(calc(var(--nav-hgt) + var(--hov-hgt))/2);
+    }
+    header ul.bar li.nav-icon ul.nav-icon li.nav-icon a img {
+        width: calc(var(--nav-hgt)/2);
+        height: calc(var(--nav-hgt)/2);
+    }
+}
+ul.nav-icon li.nav-icon {
+    display: block;
     color: var(--clr-bg-dark);
     background-color: var(--clr-accent-b);
 }
 
-header ul.bar li.nav-icon a:hover {
+ul.nav-icon li.nav-icon a:hover {
     background-color: var(--clr-accent-b-alt);
 }
 
