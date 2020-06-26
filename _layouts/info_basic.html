@@ -6,7 +6,7 @@
         <link rel="icon" href="/resources/icons/favicon{{ page.favicon }}.png" type="image/png"/>
         <meta name="keywords" content="Kyle Belveal, keelbeelveel, computer science, computer engineering, computer, CS, CE, EECS, engineering, projects, project, {{ page.keywords }}"/>
         <!-- Layout type = info_basic        -->
-        <!-- Layout revised 6/26/2020 01:18am -->
+        <!-- Layout revised 6/26/2020 01:37pm -->
     </head>
     <body>
         {% if page.banner %}
@@ -16,9 +16,11 @@
         {% include header.html %}
         {% endif %}
         <div id="body" class="contains-flex">
-            <div id="page-container" class="flex">
+            <div id="page-container" class="scroll">
+                <div id="content-wrap" class="content-wrap">
                 <main>
-                    <div id="label">
+                    <div id="subtiles" class="tile">
+                    <div class="subtile">
                         <ul>
                             <li>
                                 <a href="{{ page.proj-href }}">
@@ -69,7 +71,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="contents">
+                    <div class="subtile">
                         <ul>
                             <li>
                                 <h3>Title: {{ page.file-title }} </h3>
@@ -81,6 +83,9 @@
                                 <h4>Revised: {{ page.file-revised }}</h4>
                             </li>
                         </ul>
+                    </div>
+                    </div>
+                    <div class="tile">
                         {{ content }}
                     </div>
                     <!-- END OF PAGE CONTENT -->
