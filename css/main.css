@@ -7,9 +7,9 @@
 }
 
 /* debug 
+*/
 div { outline: 1px dashed yellow }
 span { outline: 1px dashed red }
-*/
 * { box-sizing: border-box; }
 :root {
     /* 

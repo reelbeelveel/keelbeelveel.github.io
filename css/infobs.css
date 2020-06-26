@@ -1,16 +1,7 @@
 /* Revised 6/13/2020 6:59 PM */
 @import "miamineon.css";
+@import "main.css";
 
-#flex-center {
-    position: absolute;
-    left: 20%;
-    margin: auto;
-    width: 60%;
-    padding-bottom: 60px;
-}
-#fixed < {
-    max-width:100%;
-}
 .highlight {
     overflow-x: auto;
     display: flex;
@@ -21,22 +12,10 @@
     flex: 1;
 }
 #flex-left {
-    position: absolute;
-    width: 15%;
-    max-width: 15%;
-    left: 2.5vw;
-    background-color: rgba(95, 135, 95, 0.4);
 }
 img.icon {
-    background-color: rgba(135, 255, 0, 0.3);
 }
 #flex-right {
-    position: absolute;
-    height: 20%;
-    width: 15%;
-    max-width: 15%;
-    right: 2.5vw;
-    background-color: rgba(95, 135, 95, 0.4);
 }
 .icontooltip .icontooltiptext {
   visibility: hidden;
@@ -48,49 +27,26 @@ figure {
     margin: 0;
 }
 
-.file{ background: #666462; } 
+.file{ } 
 
 
 .file .label {
-    display: inline;
-    position: relative;
-    top: -2px;
-    padding: 2px;
-    color: #00ff00;
-    background: #1c1b1a;
-    border: 2px solid #666462;
-    border-radius: 5px;
 }
 .file a {
-    color: #d75f00;
 }
 .filebody {
-    padding-top: 8px;
-    padding bottom: 9px;
-    background: #1c1b1a;
-    border: 2px solid #666462;
 }
 #file-label-type
 {
-    right: -89.5%;
 }
 #file-label-title
 {
-    left: -9.5%;
 }
 
 #file-links {
-    width:70%;
-    margin-left: 15%;
-    margin-right:15%;
 }
 #file-links td {
 }
 
 #file-links * {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: #d7d7ff; 
-    width: 45%;
 }
