@@ -6,7 +6,7 @@
         <link rel="icon" href="/resources/icons/favicon{{ page.favicon }}.png" type="image/png"/>
         <meta name="keywords" content="Kyle Belveal, keelbeelveel, computer science, computer engineering, computer, CS, CE, EECS, engineering, projects, project, {{ page.keywords }}"/>
         <!-- Layout type = info_project   -->
-        <!-- Layout revised 6/26/2020 02:07pm -->
+        <!-- Layout revised 6/26/2020 02:48pm -->
     </head>
     <body>
         {% if page.banner %}
@@ -22,11 +22,9 @@
                         <div id="subtiles" class="tile">
                             <div id="id-info" class="subtile">
                                 <img src="{{ page.icon}}" alt="Icon" class="icon">
-                                <a href="{{ page.icon-href }}">
-                                    LINK
-                                </a>
                                 {{ page.proj-title }}
                                 {{ page.proj-desc }}
+                                {% include code_types/{{ page.type }} %}
                                 {{ page.type }}
                                 {{ page.links }}
                             </div>
